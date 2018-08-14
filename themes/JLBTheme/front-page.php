@@ -89,11 +89,12 @@ get_header(); ?>
       <div class="example-position-wrapper">
         <div class="example-one">
           <div class="example-image covered" data-passive="http://localhost/wp-content/uploads/2018/08/honda-after-cropped.jpg" data-active="http://localhost/wp-content/uploads/2018/08/honda-before-cropped.jpg">
-              <h2>After</h2>
+              
             <div class="handle"></div>
             <div class="changeable">
               <h2>Before</h2>
             </div>
+            <h2 class="example-after">After</h2>
           </div>
           <div class="example-content-wrapper">
             <div class="example-content">

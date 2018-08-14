@@ -6,12 +6,23 @@
             position: relative
             width: 48%
             height: 100%
-            // display: flex
-            // align-items: flex-end
             overflow: hidden
-            h2 
+            .example-after
+                z-index: 1
                 position: absolute
+                right: 1.5rem
+                bottom: .1rem
+                margin-left: 1rem
+                color: #fff 
+                font-family: $headings
+                font-size: 5rem
+                font-weight: 700
+                font-style: italic
+                text-transform: uppercase
+                text-shadow: -.3rem .25rem $red  
             .changeable
+                position: relative
+                z-index: 2
                 height: 100%
                 display: flex
                 flex-wrap: wrap
@@ -28,6 +39,7 @@
                     text-shadow: -.3rem .25rem $red
             .handle 
                 position: absolute
+                z-index: 3
                 width: 20px
                 height: 20px
                 margin-left: -8px
