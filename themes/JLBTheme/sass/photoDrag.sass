@@ -1,0 +1,67 @@
+@import 'variables'
+
+#home 
+    .three
+        .covered, .second 
+            position: relative
+            width: 48%
+            height: 100%
+            // display: flex
+            // align-items: flex-end
+            overflow: hidden
+            h2 
+                position: absolute
+            .changeable
+                height: 100%
+                display: flex
+                flex-wrap: wrap
+                align-items: flex-end
+                overflow: hidden
+                h2 
+                    margin-left: 1rem
+                    color: #fff 
+                    font-family: $headings
+                    font-size: 5rem
+                    font-weight: 700
+                    font-style: italic
+                    text-transform: uppercase
+                    text-shadow: -.3rem .25rem $red
+            .handle 
+                position: absolute
+                width: 20px
+                height: 20px
+                margin-left: -8px
+                margin-top: -8px
+                border-radius: 50%
+                background-color: #fff
+                text-align : center
+            .handle span 
+                display : inline-block
+                margin : 15px 1px 0
+                color : #000
+                -webkit-transition : .1s ease-out
+                -moz-transition : .1s ease-out
+                -ms-transition : .1s ease-out
+                -o-transition : .1s ease-out
+                transition : .1s ease-out
+            .handle.vertical 
+                -webkit-transform : rotate(90deg)
+                -moz-transform : rotate(90deg)
+                -ms-transform : rotate(90deg)
+                -o-transform : rotate(90deg)
+                transform : rotate(90deg)
+            .handle:hover 
+                background-color: #555
+            .handle:hover span 
+                color : #FFF
+.draggable 
+	background-color: #555
+	cursor : move
+.draggable span 
+	margin : 15px 4px 0
+	color  : #FFF
+	-webkit-transition : .1s ease-out
+	-moz-transition : .1s ease-out
+	-ms-transition : .1s ease-out
+	-o-transition : .1s ease-out
+	transition : .1s ease-out

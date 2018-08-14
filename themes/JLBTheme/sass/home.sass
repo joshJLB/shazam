@@ -1,0 +1,295 @@
+@import 'variables'
+
+// Home Page Styling
+
+.one
+    height: 60vh
+    text-transform: uppercase
+    color: #fff
+    font-family: $headings
+    font-size: 5rem
+    .image-container
+        padding: .7rem
+        height: 100%
+        width: 100%
+        .service-image-collage
+            height: 100%
+        .service-row
+            height: 50%
+            display: flex
+            align-items: stretch
+        .service-images
+            margin: .6rem
+            background-size: cover
+            .overlay
+                background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5))
+        .service-images:hover 
+            .overlay 
+                opacity: 0
+        .image-collage-one
+            .service-image-one
+                position: relative
+                flex-grow: 5
+                .service-title-one
+                    position: absolute
+                    right: 1rem
+                    bottom: 5%
+            .service-image-two
+                position: relative
+                width: 20%
+                flex-grow: 1
+                .service-title-two
+                    position: absolute
+                    width: 100%
+                    text-align: center
+                    left: 50%
+                    bottom: 5%
+                    transform: translate(-50%, -5%)
+            .service-arrow
+                margin: .6rem
+                background: rgba(220, 220, 220, .6)
+                flex-grow: 1
+                width: 10%
+            .service-image-three
+                flex-grow: 4
+                position: relative
+                .service-title-three
+                    position: absolute
+                    width: 100%
+                    text-align: center
+                    left: 50%
+                    bottom: 5%
+                    transform: translate(-50%, -5%)
+            .service-image-four
+                flex-grow: 6
+                position: relative
+                .service-title-four
+                    position: absolute
+                    left: 1rem
+                    bottom: 5%
+        .image-collage-two
+            display: flex
+            align-items: stretch
+            .service-image-five
+                width: 100%
+                flex-grow: 1
+                position: relative
+                .service-title-five
+                    position: absolute
+                    left: 50%
+                    bottom: 2%
+                    transform: translate(-50%, -5%)
+        .image-collage-three
+            .service-image-six
+                flex-grow: 2
+                position: relative
+                .service-title-six
+                    position: absolute
+                    width: 100%
+                    text-align: center
+                    left: 50%
+                    bottom: 5%
+                    transform: translate(-50%, -5%)
+            .service-see-all
+                background: rgba(220, 220, 220, .6)
+                margin: .6rem
+                width: 30%
+            .service-image-seven
+                width: 100%
+                flex-grow: 1
+                position: relative
+                .service-title-seven
+                    position: absolute
+                    left: 1rem
+                    bottom: 5%
+.two
+    height: 90vh
+    .info-container
+        padding-top: 7rem
+        padding-bottom: 12rem
+        position: relative
+        height: 100%
+        display: flex
+        flex-wrap: no wrap
+        .over-30-years-one, 
+        .over-30-years-two,
+        .over-30-years-three
+            position: absolute
+            text-transform: uppercase
+            font-family: $headings
+        .over-30-years-one
+            color: $gray
+            font-size: 3.2rem
+            font-weight: 300
+            top: 40%
+            left: 33%
+            transform: translate(-40%, -33%)
+        .over-30-years-two
+            color: $blue
+            font-size: 15rem
+            font-weight: 700
+            top: 50%
+            left: 42%
+            transform: translate(-50%, -42%)
+        .over-30-years-three
+            color: $red
+            font-size: 4rem
+            font-weight: 300
+            top: 58%
+            left: 49%
+        .info-image
+            width: 50%
+            text-align: center
+            img
+                height: 100%
+        .info-content
+            width: 50%
+            position: relative
+            .info-content-wrapper
+                padding-right: 7rem
+                position: absolute
+                width: 100%
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                h2
+                    font-family: $headings
+                    font-weight: 500
+                    font-size: 2.3rem
+                p 
+                    font-family: $bodytext
+.three
+    height: 98vh
+    .example-container
+        height: 100%
+        background-size: cover
+        position: relative
+        .example-position-wrapper
+            height: 110%
+            width: 100%
+            position: absolute
+            top: -5%
+            left: 0%
+            .example-one,
+            .example-two
+                padding: 0 7rem
+                width: 100%
+                height: 50%
+                display: flex
+                flex-wrap: no-wrap
+                .example-image
+                    width: 48%
+                    height: 100%
+                    background-size: cover
+                .example-content-wrapper
+                    width: 52%
+                    height: 100%
+                    position: relative
+                    .example-content
+                        padding: 3rem 2rem 3rem 4rem
+                        width: 100%
+                        background-color: #fff
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%, -50%)
+                        h2 
+                            font-family: $headings
+                            font-weight: 700
+                            font-size: 2.5rem
+                        p 
+                            font-family: $bodytext
+.four
+    padding-top: 8rem
+    height: 100vh
+    .reviews
+        height: 100%
+        display: flex
+        flex-wrap: no-wrap
+        .reviews-image
+            width: 50%
+            height: 100%
+            background-size: cover
+            position: relative
+            .reviews-image-content
+                width: 75%
+                color: #fff
+                text-align: center
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                h2 
+                    font-family: $headings
+                    font-weight: 700
+                p 
+                    font-family: $bodytext
+                img 
+                    margin-top: 3rem
+            .reviews-image-overlay
+                height: 100%
+                width: 100%
+                background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5))
+        .reviews-content
+            width: 50%
+            height: 100%
+            overflow-x: hidden
+            h2
+                padding: 5rem 0 3rem 7rem
+                font-family: $headings
+                font-size: 2.3rem
+            .reviews-content-one
+                margin: 0 0 1rem 7rem
+                position: relative
+                .reviews-content-quote
+                    position: absolute
+                    top: 10%
+                    left: 9%
+                .reviews-content-one-content
+                    width: 75%
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    p
+                        margin-bottom: 0
+                        font-family: $bodytext
+                    h3 
+                        font-family: $headings
+                        text-align: right
+            .reviews-content-two
+                margin: 0 7rem 1rem 0
+                position: relative
+                .reviews-content-two-image 
+                    width: 100%
+                    -moz-transform: scaleX(-1)
+                    -o-transform: scaleX(-1)
+                    -webkit-transform: scaleX(-1)
+                    transform: scaleX(-1)
+                    filter: FlipH
+                    -ms-filter: "FlipH" 
+                .reviews-content-quote-two
+                    position: absolute
+                    top: 10%
+                    left: 9%
+                .reviews-content-two-content
+                    width: 75%
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%, -50%)
+                    p
+                        margin-bottom: 0
+                        font-family: $bodytext
+                    h3 
+                        font-family: $headings
+                        text-align: right
+                        
+
+
+
+                
+            
+
+        
+            
