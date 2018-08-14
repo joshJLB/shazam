@@ -88,8 +88,7 @@ get_header(); ?>
     <div class="example-container" style="background-image:url(http://localhost/wp-content/uploads/2018/08/pattern-background.jpg)">
       <div class="example-position-wrapper">
         <div class="example-one">
-          <div class="example-image covered" data-passive="http://localhost/wp-content/uploads/2018/08/honda-after-cropped.jpg" data-active="http://localhost/wp-content/uploads/2018/08/honda-before-cropped.jpg">
-              
+          <div class="example-image covered" data-passive="http://localhost/wp-content/uploads/2018/08/honda-after-cropped.jpg" data-active="http://localhost/wp-content/uploads/2018/08/honda-before-cropped.jpg">              
             <div class="handle"></div>
             <div class="changeable">
               <h2>Before</h2>
@@ -112,7 +111,10 @@ get_header(); ?>
           </div>
           <div class="example-image covered second" data-passive="http://localhost/wp-content/uploads/2018/08/after-audi.jpg" data-active="http://localhost/wp-content/uploads/2018/08/detailing-before-audi.jpg">
             <div class="handle"></div>
-            <div class="changeable"></div>
+            <div class="changeable">
+              <h2>Before</h2>
+            </div>
+            <h2 class="example-after">After</h2>
           </div>
         </div>
       </div>
