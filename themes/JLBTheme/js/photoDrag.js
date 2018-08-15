@@ -64,13 +64,13 @@
     
             if(settings.direction === "horizontal" ) {
                 $changeable.width(setX);
+                $changeable.css('height', '100%');
                 $changeable.css('border-right', '5px solid #FFF');
             } 
     
             else if(settings.direction === "vertical" ) {
     
                         $this.height($changeable.height());        		
-                        $changeable.height(setY);        		
                         $changeable.css('border-bottom', '5px solid #FFF');
                         $handle.addClass('vertical');
             }
