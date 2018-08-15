@@ -103,7 +103,7 @@
                     left: 1rem
                     bottom: 5%
 .two
-    height: 90vh
+    min-height: 98vh
     .info-container
         padding-top: 7rem
         padding-bottom: 12rem
@@ -111,37 +111,37 @@
         height: 100%
         display: flex
         flex-wrap: no wrap
-        .over-30-years-one, 
-        .over-30-years-two,
-        .over-30-years-three
-            position: absolute
-            text-transform: uppercase
-            font-family: $headings
-        .over-30-years-one
-            color: $gray
-            font-size: 3.2rem
-            font-weight: 300
-            top: 40%
-            left: 33%
-            transform: translate(-40%, -33%)
-        .over-30-years-two
-            color: $blue
-            font-size: 15rem
-            font-weight: 700
-            top: 50%
-            left: 42%
-            transform: translate(-50%, -42%)
-        .over-30-years-three
-            color: $red
-            font-size: 4rem
-            font-weight: 300
-            top: 58%
-            left: 49%
         .info-image
+            position: relative
             width: 50%
             text-align: center
             img
                 height: 100%
+            .over-30-years-one, 
+            .over-30-years-two,
+            .over-30-years-three
+                position: absolute
+                text-transform: uppercase
+                font-family: $headings
+            .over-30-years-one
+                color: $gray
+                font-size: 3.2rem
+                font-weight: 300
+                top: 13rem
+                right: 14rem
+                transform: translate(-40%, -33%) 
+            .over-30-years-two 
+                color: $blue
+                font-size: 15rem
+                font-weight: 700
+                bottom: 4rem
+                right: 1rem
+            .over-30-years-three
+                color: $red
+                font-size: 4rem
+                font-weight: 300
+                bottom: 5rem
+                right: -26rem
         .info-content
             width: 50%
             position: relative
@@ -160,6 +160,8 @@
                     font-family: $bodytext
 .three
     height: 98vh
+    @media screen and (max-width: 1024px)
+        height: auto
     .example-container
         height: 100%
         background-size: cover
@@ -169,7 +171,13 @@
             width: 100%
             position: absolute
             top: -5%
-            left: 0%
+            @media screen and (max-width: 1024px)
+                padding: 3rem 0
+                height: 100%
+                position: relative
+                top: 0
+            @media screen and (max-width: 768px)
+                padding: 0
             .example-one,
             .example-two
                 padding: 0 7rem
@@ -177,28 +185,42 @@
                 height: 50%
                 display: flex
                 flex-wrap: no-wrap
+                @media screen and (max-width: 1440px)
+                    padding: 0 3rem
+                @media screen and (max-width: 1024px)
+                    flex-direction: column
+                @media screen and (max-width: 768px)
+                    padding: 0
                 .example-image
-                    width: 48%
-                    height: 100%
                     background-size: cover
                 .example-content-wrapper
                     width: 52%
                     height: 100%
                     position: relative
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+                    @media screen and (max-width: 1024px)
+                        width: 100%
+                        // margin: 1rem 0
                     .example-content
                         padding: 3rem 2rem 3rem 4rem
                         width: 100%
                         background-color: #fff
-                        position: absolute
-                        top: 50%
-                        left: 50%
-                        transform: translate(-50%, -50%)
+                        @media screen and (max-width: 1250px)
+                            padding: 0 2rem
                         h2 
                             font-family: $headings
                             font-weight: 700
                             font-size: 2.5rem
                         p 
                             font-family: $bodytext
+            .example-two
+                .example-content-wrapper
+                    &:nth-of-type(1)
+                        @media screen and (max-width: 1024px)
+                            order: 2
 
 .four
     padding-top: 8rem

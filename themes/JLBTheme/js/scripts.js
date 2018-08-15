@@ -90,9 +90,9 @@ $('body').addClass(detectBrowser());
 $(function() {
 	$('.covered').coveringBad({
     marginY : 30 , // margin-top and margin-bottom
-    marginX : 30 , // margin-left and margin-right
-    setX  : 600,
-    setY  : 300 ,
+    marginX : 10 , // margin-left and margin-right
+    setX  : 350,
+    setY  : 100 ,
     direction   : "horizontal" // vertical or horizontal
 
   });

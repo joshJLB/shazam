@@ -69,10 +69,10 @@ get_header(); ?>
 
   <section class="two">
     <div class="info-container">
+      <div class="info-image">
         <h2 class="over-30-years-one">Over</h2>
         <h2 class="over-30-years-two">30</h2>
         <h2 class="over-30-years-three">Years Experience</h2>
-      <div class="info-image">
         <img src="http://localhost/wp-content/uploads/2018/08/about-photo.jpg" alt="">
       </div>
       <div class="info-content">
