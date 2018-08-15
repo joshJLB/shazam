@@ -123,28 +123,27 @@ get_header(); ?>
 
   <section class="four">
     <div class="reviews">
-        <div class="reviews-image" style="background-image:url(http://localhost/wp-content/uploads/2018/08/100326475-soapy-water-drains-from-the-car-a-man-washes-a-hand-car-wash-with-water-under-pressure-in-a-car-wash.jpg)">
-          <div class="reviews-image-overlay"></div>
-          <div class="reviews-image-content">
-            <h2>Top Ranked Business On Better Business Bereau</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor quam sit amet ullamcorper elementum. Curabitur tempus vulputate molestie. Vestibulum vel risus non urna venenatis placerat.</p>
-            <img src="http://localhost/wp-content/uploads/2018/08/bbb-logo.png" alt="">
-          </div>
+      <div class="reviews-image" style="background-image:url(http://localhost/wp-content/uploads/2018/08/100326475-soapy-water-drains-from-the-car-a-man-washes-a-hand-car-wash-with-water-under-pressure-in-a-car-wash.jpg)">
+        <div class="reviews-image-overlay"></div>
+        <div class="reviews-image-content">
+          <h2>Top Ranked Business On Better Business Bereau</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor quam sit amet ullamcorper elementum. Curabitur tempus vulputate molestie. Vestibulum vel risus non urna venenatis placerat.</p>
+          <img src="http://localhost/wp-content/uploads/2018/08/bbb-logo.png" alt="">
         </div>
+      </div>
       
       <div class="reviews-content">
         <h2 class"reviews-header">Don't Believe Us? Read Our Reviews!</h2>
-        <div class="reviews-content-one">
-          <img src="http://localhost/wp-content/uploads/2018/08/quote-box.png" alt="">
+        <div class="reviews-content-section reviews-content-one">
           <img class="reviews-content-quote" src="http://localhost/wp-content/uploads/2018/08/“.png" alt="">
           <div class="reviews-content-one-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h3>Kenneth Allen</h3>
           </div>
         </div>
-        <div class="reviews-content-two">
-          <img class="reviews-content-two-image" src="http://localhost/wp-content/uploads/2018/08/quote-box.png" alt="">
-          <img class="reviews-content-quote-two" src="http://localhost/wp-content/uploads/2018/08/“.png" alt="">
+        <div class="reviews-content-section reviews-content-two">
+          <!-- <img class="reviews-content-two-image" src="http://localhost/wp-content/uploads/2018/08/quote-box.png" alt=""> -->
+          <img class="reviews-content-quote" src="http://localhost/wp-content/uploads/2018/08/“.png" alt="">
           <div class="reviews-content-two-content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <h3>Kenneth Allen</h3>

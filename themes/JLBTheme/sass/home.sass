@@ -199,16 +199,15 @@
                             font-size: 2.5rem
                         p 
                             font-family: $bodytext
+
 .four
     padding-top: 8rem
-    height: 100vh
     .reviews
         height: 100%
         display: flex
         flex-wrap: no-wrap
         .reviews-image
             width: 50%
-            height: 100%
             background-size: cover
             position: relative
             .reviews-image-content
@@ -225,65 +224,36 @@
                 p 
                     font-family: $bodytext
                 img 
-                    margin-top: 3rem
+                    margin-top: 3rem 
             .reviews-image-overlay
                 height: 100%
                 width: 100%
                 background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5))
         .reviews-content
             width: 50%
-            height: 100%
             overflow-x: hidden
-            h2
+            h2 
                 padding: 5rem 0 3rem 7rem
                 font-family: $headings
                 font-size: 2.3rem
-            .reviews-content-one
-                margin: 0 0 1rem 7rem
+            .reviews-content-section
+                padding: 5rem
+                background: $gray
                 position: relative
                 .reviews-content-quote
                     position: absolute
-                    top: 10%
-                    left: 9%
-                .reviews-content-one-content
-                    width: 75%
-                    position: absolute
-                    top: 50%
-                    left: 50%
-                    transform: translate(-50%, -50%)
-                    p
-                        margin-bottom: 0
-                        font-family: $bodytext
-                    h3 
-                        font-family: $headings
-                        text-align: right
+                    top: 4rem
+                    left: 3rem
+                p
+                    margin-bottom: 0
+                    font-family: $bodytext
+                h3 
+                    font-family: $headings
+                    text-align: right
+            .reviews-content-one
+                margin: 0 0 5rem 7rem
             .reviews-content-two
                 margin: 0 7rem 1rem 0
-                position: relative
-                .reviews-content-two-image 
-                    width: 100%
-                    -moz-transform: scaleX(-1)
-                    -o-transform: scaleX(-1)
-                    -webkit-transform: scaleX(-1)
-                    transform: scaleX(-1)
-                    filter: FlipH
-                    -ms-filter: "FlipH" 
-                .reviews-content-quote-two
-                    position: absolute
-                    top: 10%
-                    left: 9%
-                .reviews-content-two-content
-                    width: 75%
-                    position: absolute
-                    top: 50%
-                    left: 50%
-                    transform: translate(-50%, -50%)
-                    p
-                        margin-bottom: 0
-                        font-family: $bodytext
-                    h3 
-                        font-family: $headings
-                        text-align: right
                         
 
 
