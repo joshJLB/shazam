@@ -88,14 +88,23 @@ $('body').addClass(detectBrowser());
 // photo dragger
 
 $(function() {
-	$('.covered').coveringBad({
-    marginY : 30 , // margin-top and margin-bottom
-    marginX : 10 , // margin-left and margin-right
-    setX  : 350,
-    setY  : 100 ,
-    direction   : "horizontal" // vertical or horizontal
-
-  });
+  if ( $(window).width() <= 576 ) {
+    $('.covered').coveringBad({
+      marginY : 30 , // margin-top and margin-bottom
+      marginX : 10 , // margin-left and margin-right
+      setX  : 200,
+      setY  : 100 ,
+      direction   : "horizontal" // vertical or horizontal
+    });
+  } else {
+    $('.covered').coveringBad({
+      marginY : 30 , // margin-top and margin-bottom
+      marginX : 10 , // margin-left and margin-right
+      setX  : 350,
+      setY  : 100 ,
+      direction   : "horizontal" // vertical or horizontal
+    });
+  }
 });
 
 

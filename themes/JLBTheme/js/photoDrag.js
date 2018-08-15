@@ -77,7 +77,6 @@
     
             // Dragging Bad
             //////////////////////////////////
-    
             $handle.on('mousedown', function(event) {
     
                 event.preventDefault();
@@ -93,10 +92,29 @@
                  $handle.removeClass('draggable');
             });
     
-            $this.bind('mousemove', dragger);
+            $this.bind('touchmove', dragger);
+            
+            //
+            
+            // $handle.on('mousedown', function(event) {
+    
+            //     event.preventDefault();
+            //     $handle.addClass('draggable');
+            //     pos_x  = parseInt($handle.css('left'));
+            //     startX = event.pageX;
+            //     pos_y  = parseInt($handle.css('top'));
+            //     startY = event.pageY;
+    
+            // });
+    
+            // $(document).on('mouseup' , function(event) {
+            //      $handle.removeClass('draggable');
+            // });
+    
+            // $this.bind('mousemove', dragger);
     
             function dragger(e) {
-    
+                e.preventDefault();
                 var left = pos_x + (e.pageX - startX);
                 if (left < min_left) left = min_left;
                 else if (left > max_left) left = max_left;

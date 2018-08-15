@@ -103,59 +103,137 @@
                     left: 1rem
                     bottom: 5%
 .two
-    min-height: 98vh
+    overflow-x: hidden
     .info-container
         padding-top: 7rem
         padding-bottom: 12rem
         position: relative
         height: 100%
         display: flex
-        flex-wrap: no wrap
+        flex-wrap: nowrap
+        @media screen and (max-width: 768px)
+            padding: 4rem 0
+            flex-wrap: wrap
         .info-image
             position: relative
             width: 50%
             text-align: center
+            @media screen and (max-width: 1024px)
+                padding-right: 3rem
+                width: 40%
+            @media screen and (max-width: 768px)
+                padding: 0
+                width: 100%
+                text-align: center
+                flex-grow: 0
             img
-                height: 100%
-            .over-30-years-one, 
-            .over-30-years-two,
-            .over-30-years-three
-                position: absolute
-                text-transform: uppercase
-                font-family: $headings
-            .over-30-years-one
-                color: $gray
-                font-size: 3.2rem
-                font-weight: 300
-                top: 13rem
-                right: 14rem
-                transform: translate(-40%, -33%) 
-            .over-30-years-two 
-                color: $blue
-                font-size: 15rem
-                font-weight: 700
-                bottom: 4rem
-                right: 1rem
-            .over-30-years-three
-                color: $red
-                font-size: 4rem
-                font-weight: 300
-                bottom: 5rem
-                right: -26rem
+                @media screen and (max-width: 1024px)
+                    width: 100%
+                @media screen and (max-width: 768px)
+                    width: 85%
+            .over-30-years-wrapper
+                @media screen and (max-width: 768px)
+                    padding: 1rem 0
+                    width: 100%
+                    display: flex
+                    flex-wrap: nowrap
+                    justify-content: center
+                .over-30-years-one, 
+                .over-30-years-two,
+                .over-30-years-three
+                    position: absolute
+                    text-transform: uppercase
+                    font-family: $headings
+                    @media screen and (max-width: 768px)
+                        margin: 0
+                        position: relative
+                        text-align: left
+                        bottom: 0
+                        right: 0
+                        top: 0
+                        left: 0
+                .over-30-years-one
+                    color: $gray
+                    font-size: 3.2rem
+                    font-weight: 300
+                    top: 12rem
+                    right: 16.5rem
+                    @media screen and (max-width: 1440px)
+                        font-size: 2.5rem
+                        top: 15.5rem
+                        right: 13rem
+                    @media screen and (max-width: 1024px)
+                        font-size: 2rem
+                        color: $red
+                        bottom: -1rem
+                        right: -3.5rem
+                        top: auto
+                    @media screen and (max-width: 768px)
+                        bottom: 0
+                        right: 0
+                        top: 0
+                        left: 0
+                .over-30-years-two 
+                    color: $blue
+                    font-size: 15rem
+                    font-weight: 700
+                    bottom: 4rem
+                    right: 1rem
+                    @media screen and (max-width: 1440px)
+                        font-size: 12rem
+                        bottom: 3rem
+                    @media screen and (max-width: 1024px)
+                        font-size: 2rem
+                        bottom: -1rem
+                        right: -6rem
+                    @media screen and (max-width: 768px)
+                        bottom: 0
+                        right: 0
+                        top: 0
+                        left: 0
+                .over-30-years-three
+                    color: $red
+                    font-size: 4rem
+                    font-weight: 300
+                    bottom: -5rem
+                    right: -26rem
+                    @media screen and (max-width: 1440px)
+                        font-size: 3rem
+                        bottom: 4rem
+                        right: -19rem
+                    @media screen and (max-width: 1024px)
+                        font-size: 2rem
+                        bottom: -1rem
+                        right: -20rem
+                    @media screen and (max-width: 768px)
+                        bottom: 0
+                        right: 0
+                        top: 0
+                        left: 0
         .info-content
             width: 50%
             position: relative
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            @media screen and (max-width: 1024px)
+                width: 60%
+            @media screen and (max-width: 768px)
+                width: 100%
             .info-content-wrapper
                 padding-right: 7rem
-                position: absolute
-                width: 100%
-                top: 50%
-                left: 50%
-                transform: translate(-50%, -50%)
+                @media screen and (max-width: 1250px)
+                    padding-right: 2rem
+                @media screen and (max-width: 768px)
+                    padding: 1rem
+                    text-align: center
                 h2
                     font-family: $headings
                     font-weight: 500
                     font-size: 2.3rem
+                    @media screen and (max-width: 768px)
+                        text-align: center
                 p 
                     font-family: $bodytext
 .three
@@ -195,7 +273,6 @@
                     background-size: cover
                 .example-content-wrapper
                     width: 52%
-                    height: 100%
                     position: relative
                     display: flex
                     flex-direction: column
@@ -203,7 +280,6 @@
                     align-items: center
                     @media screen and (max-width: 1024px)
                         width: 100%
-                        // margin: 1rem 0
                     .example-content
                         padding: 3rem 2rem 3rem 4rem
                         width: 100%

@@ -23,7 +23,9 @@
                 font-weight: 700
                 font-style: italic
                 text-transform: uppercase
-                text-shadow: -.3rem .25rem $red  
+                text-shadow: -.3rem .25rem $red
+                @media screen and (max-width: 768px)
+                    font-size: 3rem  
             .changeable
                 position: relative
                 z-index: 2
@@ -31,7 +33,6 @@
                 flex-wrap: wrap
                 align-items: flex-end
                 overflow: hidden
-                direction: btt
                 h2 
                     margin-left: 1rem
                     color: #fff 
@@ -42,6 +43,8 @@
                     text-transform: uppercase
                     text-shadow: -.3rem .25rem $red
                     z-index: 1
+                    @media screen and (max-width: 768px)
+                        font-size: 3rem 
             .handle 
                 position: absolute
                 z-index: 3
