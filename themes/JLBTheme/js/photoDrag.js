@@ -23,7 +23,7 @@
     
         // Initialization
         ////////////////////////////////
-    
+            var $device = (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase()));
             var $this = $(this),
                     $changeable = $this.find('>.changeable'),
                     $handle = $this.find('>.handle'),
@@ -77,51 +77,52 @@
     
             // Dragging Bad
             //////////////////////////////////
-            $handle.on('mousedown', function(event) {
-    
+
+            // $('.over-30-years-one').on('touchmove', function(event) {
+            //     console.log('hello world');
+            //     $(document).css('display', 'none');
+            // });
+
+            $handle.on('touchstart mousedown', function(event) {
                 event.preventDefault();
+                
                 $handle.addClass('draggable');
-                pos_x  = parseInt($handle.css('left'));
-                startX = event.pageX;
-                pos_y  = parseInt($handle.css('top'));
-                startY = event.pageY;
-    
+
+                if ($device) {
+                    pos_x  = parseInt($handle.css('left'));
+                    startX = event.originalEvent.touches[0].pageX;
+                    pos_y  = parseInt($handle.css('top'));
+                    startY = event.originalEvent.touches[0].pageY;
+                } else {
+                    pos_x  = parseInt($handle.css('left'));
+                    startX = event.pageX;
+                    pos_y  = parseInt($handle.css('top'));
+                    startY = event.pageY;
+                }
             });
     
-            $(document).on('mouseup' , function(event) {
+            $(document).on('touchend mouseup' , function(event) {
                  $handle.removeClass('draggable');
             });
     
-            $this.bind('touchmove', dragger);
-            
-            //
-            
-            // $handle.on('mousedown', function(event) {
-    
-            //     event.preventDefault();
-            //     $handle.addClass('draggable');
-            //     pos_x  = parseInt($handle.css('left'));
-            //     startX = event.pageX;
-            //     pos_y  = parseInt($handle.css('top'));
-            //     startY = event.pageY;
-    
-            // });
-    
-            // $(document).on('mouseup' , function(event) {
-            //      $handle.removeClass('draggable');
-            // });
-    
-            // $this.bind('mousemove', dragger);
+            $this.bind('touchmove mousemove', dragger);
     
             function dragger(e) {
                 e.preventDefault();
-                var left = pos_x + (e.pageX - startX);
+                if ($device) {
+                    var $pageX = e.originalEvent.touches[0].pageX;
+                    var $pageY = e.originalEvent.touches[0].pageY;
+                    var left = pos_x + ($pageX - startX);
+                    var top = pos_y + ($pageY - startY);
+                } else {
+                    var left = pos_x + (e.pageX - startX);
+                    var top = pos_y + (e.pageY - startY);
+                }
                 if (left < min_left) left = min_left;
                 else if (left > max_left) left = max_left;
-    
+
                 $('.draggable').css('left', left);
-    
-                var top = pos_y + (e.pageY - startY);
+                
                 if (top < min_top) top = min_top;
                 else if (top > max_top) top = max_top;
     
