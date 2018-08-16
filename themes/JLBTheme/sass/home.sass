@@ -3,18 +3,26 @@
 // Home Page Styling
 
 .one
-    height: 60vh
+    height: 35rem
     text-transform: uppercase
     color: #fff
     font-family: $headings
     font-size: 5rem
+    @media screen and (max-width: 768px)
+        height: 20rem
     .image-container
-        padding: .7rem
         height: 100%
         width: 100%
+        display: flex
+        flex-wrap: nowrap
         .service-image-collage
             height: 100%
+            @media screen and (max-width: 768px)
+                margin: 0 .6rem
+                h3 
+                    font-size: 1rem
         .service-row
+            // margin: 0 .6rem
             height: 50%
             display: flex
             align-items: stretch
@@ -27,9 +35,12 @@
             .overlay 
                 opacity: 0
         .image-collage-one
+            flex-grow: 2.3
             .service-image-one
                 position: relative
                 flex-grow: 5
+                @media screen and (max-width: 768px)
+                    flex-grow: 1
                 .service-title-one
                     position: absolute
                     right: 1rem
@@ -38,6 +49,9 @@
                 position: relative
                 width: 20%
                 flex-grow: 1
+                @media screen and (max-width: 768px)
+                    flex-grow: 0
+                    width: 45%
                 .service-title-two
                     position: absolute
                     width: 100%
@@ -47,9 +61,19 @@
                     transform: translate(-50%, -5%)
             .service-arrow
                 margin: .6rem
-                background: rgba(220, 220, 220, .6)
-                flex-grow: 1
-                width: 10%
+                background: $gray
+                flex-shrink: 0
+                width: 7rem
+                display: flex
+                justify-content: center
+                align-items: center
+                @media screen and (max-width: 1024px)
+                    width: 5rem
+                .fa-angle-left 
+                    font-size: 10rem
+                    color: $blue
+                    @media screen and (max-width: 1024px)
+                        font-size: 5rem 
             .service-image-three
                 flex-grow: 4
                 position: relative
@@ -63,13 +87,18 @@
             .service-image-four
                 flex-grow: 6
                 position: relative
+                @media screen and (max-width: 768px)
+                    flex-grow: 4
                 .service-title-four
                     position: absolute
                     left: 1rem
                     bottom: 5%
         .image-collage-two
+            flex-grow: 2
             display: flex
             align-items: stretch
+            @media screen and (max-width: 1024px)
+                display: none
             .service-image-five
                 width: 100%
                 flex-grow: 1
@@ -80,6 +109,9 @@
                     bottom: 2%
                     transform: translate(-50%, -5%)
         .image-collage-three
+            flex-grow: 1
+            @media screen and (max-width: 768px)
+                display: none
             .service-image-six
                 flex-grow: 2
                 position: relative
@@ -91,9 +123,22 @@
                     bottom: 5%
                     transform: translate(-50%, -5%)
             .service-see-all
-                background: rgba(220, 220, 220, .6)
                 margin: .6rem
-                width: 30%
+                background: $gray
+                flex-shrink: 0
+                width: 7rem
+                display: flex
+                justify-content: center
+                align-items: center
+                h3 
+                    color: $blue
+                    font-family: $headings
+                    font-size: 2rem
+                    -webkit-transform: rotate(-90deg)
+                    -moz-transform: rotate(-90deg)
+                    -o-transform: rotate(-90deg)
+                    -ms-transform: rotate(-90deg)
+                    transform: rotate(-90deg)
             .service-image-seven
                 width: 100%
                 flex-grow: 1
@@ -286,6 +331,8 @@
                         background-color: #fff
                         @media screen and (max-width: 1250px)
                             padding: 0 2rem
+                        @media screen and (max-width: 786px)
+                            padding: 2rem
                         h2 
                             font-family: $headings
                             font-weight: 700
@@ -300,6 +347,8 @@
 
 .four
     padding-top: 8rem
+    @media screen and (max-width: 786px)
+        padding-top: 0
     .reviews
         height: 100%
         display: flex

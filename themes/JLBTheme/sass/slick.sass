@@ -9,6 +9,23 @@
     height: 100%
     .hero-slide
       +bg(cover, center)
+  .one
+    .slick-prev
+      display: none !important
+    .slick-next
+      width: 16.25rem
+      height: 7rem
+      font-size: 0
+      background-color: transparent
+      border: none
+      position: absolute
+      bottom: 5.25rem
+      left: -4.0rem
+      -webkit-transform: rotate(-90deg)
+      -moz-transform: rotate(-90deg)
+      -o-transform: rotate(-90deg)
+      -ms-transform: rotate(-90deg)
+      transform: rotate(-90deg)
 
 .slick-dots
   position: absolute
@@ -24,7 +41,7 @@
   button
     padding: 0.25rem
     margin: 0 1rem
-    background-color: transparentize(white, 0.5)
+    background-color: transparentize(black, 0.5)
     color: transparent
     border: none
     &:focus
@@ -32,3 +49,4 @@
   .slick-active
     button
       background-color: white
+

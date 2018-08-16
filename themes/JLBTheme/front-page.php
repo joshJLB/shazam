@@ -10,62 +10,122 @@ get_header(); ?>
   <?php get_template_part('components/home-page/hero'); ?>
   <!-- Or, nah -->
 
-  <section class="one">
-    <div class="image-container row m-0">
-      <div class="col-5 p-0 service-image-collage image-collage-one">
-        <div class="service-row">
-          
-            <div class="service-images service-image-one" style="background-image:url(http://localhost/wp-content/uploads/2018/08/88034363-car-detailing-car-washing-with-foam-shampoo.jpg)">
+  <div class="one">
+    <div class="slide">
+      <div class="image-container m-auto">
+        <div class="p-0 service-image-collage image-collage-one">
+          <div class="service-row">
+              <div class="service-images service-image-one" style="background-image:url(http://localhost/wp-content/uploads/2018/08/88034363-car-detailing-car-washing-with-foam-shampoo.jpg)">
+                <div class="overlay">
+                <h3 class="service-title service-title-one">Service Title</h3>
+                </div>
+              </div>
+            <div class="service-images service-image-two" style="background-image:url(http://localhost/wp-content/uploads/2018/08/8138c5eb-2fee-49df-a12e-de0bf1c5091d_l.jpg)">
               <div class="overlay">
-              <h3 class="service-title service-title-one">Service Title</h3>
+              <h3 class="service-title service-title-two">Service Title</h3>
               </div>
             </div>
-          <div class="service-images service-image-two" style="background-image:url(http://localhost/wp-content/uploads/2018/08/8138c5eb-2fee-49df-a12e-de0bf1c5091d_l.jpg)">
-            <div class="overlay">
-             <h3 class="service-title service-title-two">Service Title</h3>
+          </div>
+          <div class="service-row">
+            <div class="service-arrow"><i class="fas fa-angle-left"></i></div>
+            <div class="service-images service-image-three" style="background-image:url(http://localhost/wp-content/uploads/2018/08/27ec5414-512c-471d-9f4e-71345a6ed879_l.jpg)">
+              <div class="overlay">
+              <h3 class="service-title service-title-three" >Service Title</h3>
+              </div>
+            </div>
+            <div class="service-images service-image-four" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
+              <div class="overlay">
+                <h3 class="service-title service-title-four">Service Title</h3>
+              </div>
             </div>
           </div>
         </div>
-        <div class="service-row">
-          <div class="service-arrow" style="background-image:url(http://localhost/wp-content/uploads/2018/08/arrow.png)"></div>
-          <div class="service-images service-image-three" style="background-image:url(http://localhost/wp-content/uploads/2018/08/27ec5414-512c-471d-9f4e-71345a6ed879_l.jpg)">
+        <div class="p-0 service-image-collage image-collage-two">
+          <div class="service-images service-image-five" style="background-image:url(http://localhost/wp-content/uploads/2018/08/60dc909f-f36f-46ac-83e2-1578e6ad4162_h.jpg)">
             <div class="overlay">
-             <h3 class="service-title service-title-three" >Service Title</h3>
-            </div>
-          </div>
-          <div class="service-images service-image-four" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
-            <div class="overlay">
-              <h3 class="service-title service-title-four">Service Title</h3>
+              <h3 class="service-title service-title-five">Service Title</h3>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-4 p-0 service-image-collage image-collage-two">
-        <div class="service-images service-image-five" style="background-image:url(http://localhost/wp-content/uploads/2018/08/60dc909f-f36f-46ac-83e2-1578e6ad4162_h.jpg)">
-          <div class="overlay">
-            <h3 class="service-title service-title-five">Service Title</h3>
-          </div>
-        </div>
-      </div>
-      <div class="col-3 p-0 service-image-collage image-collage-three">
-        <div class="service-row">
-          <div class="service-images service-image-six" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
-            <div class="overlay">
-              <h3 class="service-title service-title-six">Service Title</h3>
+        <div class="p-0 service-image-collage image-collage-three">
+          <div class="service-row">
+            <div class="service-images service-image-six" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
+              <div class="overlay">
+                <h3 class="service-title service-title-six">Service Title</h3>
+              </div>
+            </div>
+            <div class="service-see-all">
+              <h3>See All</h3>
             </div>
           </div>
-          <div class="service-see-all" style="background-image:url(http://localhost/wp-content/uploads/2018/08/arrow.png)"></div>
-        </div>
-        <div class="service-row">
-          <div class="service-images service-image-seven" style="background-image:url(http://localhost/wp-content/uploads/2018/08/88034363-car-detailing-car-washing-with-foam-shampoo-2.jpg)">
-            <div class="overlay">
-              <h3 class="service-title service-title-seven">Service Title</h3>
+          <div class="service-row">
+            <div class="service-images service-image-seven" style="background-image:url(http://localhost/wp-content/uploads/2018/08/88034363-car-detailing-car-washing-with-foam-shampoo-2.jpg)">
+              <div class="overlay">
+                <h3 class="service-title service-title-seven">Service Title</h3>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+    <div class="slide">
+      <div class="image-container row m-auto">
+        <div class="p-0 service-image-collage image-collage-one">
+          <div class="service-row">
+              <div class="service-images service-image-one" style="background-image:url(http://localhost/wp-content/uploads/2018/08/black.jpg)">
+                <div class="overlay">
+                <h3 class="service-title service-title-one">Service Title</h3>
+                </div>
+              </div>
+            <div class="service-images service-image-two" style="background-image:url(http://localhost/wp-content/uploads/2018/08/black.jpg)">
+              <div class="overlay">
+              <h3 class="service-title service-title-two">Service Title</h3>
+              </div>
+            </div>
+          </div>
+          <div class="service-row">
+            <div class="service-arrow" style="background-image:url(http://localhost/wp-content/uploads/2018/08/arrow.png)"><i class="fas fa-angle-left"></i></div>
+            <div class="service-images service-image-three" style="background-image:url(http://localhost/wp-content/uploads/2018/08/27ec5414-512c-471d-9f4e-71345a6ed879_l.jpg)">
+              <div class="overlay">
+              <h3 class="service-title service-title-three" >Service Title</h3>
+              </div>
+            </div>
+            <div class="service-images service-image-four" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
+              <div class="overlay">
+                <h3 class="service-title service-title-four">Service Title</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-0 service-image-collage image-collage-two">
+          <div class="service-images service-image-five" style="background-image:url(http://localhost/wp-content/uploads/2018/08/60dc909f-f36f-46ac-83e2-1578e6ad4162_h.jpg)">
+            <div class="overlay">
+              <h3 class="service-title service-title-five">Service Title</h3>
+            </div>
+          </div>
+        </div>
+        <div class="p-0 service-image-collage image-collage-three">
+          <div class="service-row">
+            <div class="service-images service-image-six" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
+              <div class="overlay">
+                <h3 class="service-title service-title-six">Service Title</h3>
+              </div>
+            </div>
+            <div class="service-see-all">
+              <h3>See All</h3>
+            </div>
+          </div>
+          <div class="service-row">
+            <div class="service-images service-image-seven" style="background-image:url(http://localhost/wp-content/uploads/2018/08/88034363-car-detailing-car-washing-with-foam-shampoo-2.jpg)">
+              <div class="overlay">
+                <h3 class="service-title service-title-seven">Service Title</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section class="two">
     <div class="info-container">

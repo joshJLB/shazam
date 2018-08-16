@@ -78,15 +78,10 @@
             // Dragging Bad
             //////////////////////////////////
 
-            // $('.over-30-years-one').on('touchmove', function(event) {
-            //     console.log('hello world');
-            //     $(document).css('display', 'none');
-            // });
-
             $handle.on('touchstart mousedown', function(event) {
                 event.preventDefault();
                 
-                $handle.addClass('draggable');
+                $handle.addClass('handle-dragger');
 
                 if ($device) {
                     pos_x  = parseInt($handle.css('left'));
@@ -102,7 +97,7 @@
             });
     
             $(document).on('touchend mouseup' , function(event) {
-                 $handle.removeClass('draggable');
+                 $handle.removeClass('handle-dragger');
             });
     
             $this.bind('touchmove mousemove', dragger);
@@ -121,14 +116,14 @@
                 if (left < min_left) left = min_left;
                 else if (left > max_left) left = max_left;
 
-                $('.draggable').css('left', left);
+                $('.handle-dragger').css('left', left);
                 
                 if (top < min_top) top = min_top;
                 else if (top > max_top) top = max_top;
     
-                $('.draggable').css('top', top);
+                $('.handle-dragger').css('top', top);
     
-                if($('.draggable').length) {
+                if($('.handle-dragger').length) {
                     changeWidth(left , top);
                 }
     
