@@ -8,13 +8,17 @@
 
 <?php
   // Hero Section Variables
-  // $hero_background = get_field('hero_background');
-  // $hero_video = get_field('hero_video');
-  // $hero_slider = get_field('hero_slider');
+  $hero_background = get_field('hero_background');
+  $hero_video = get_field('hero_video');
+  $hero_slider = get_field('hero_slider');
 ?>
 <?php if (!$hero_video && !$hero_slider): ?>
   <section class="hero" style="background-image: url('<?php echo $hero_background['url']; ?>');" title="<?php echo $hero_background['alt']; ?>">
     <!-- Add Content Here for Static Background -->
+    <div class="hero-content">
+      <h1 class="hero-title"><?=get_field('hero_title')?></h1>
+      <h3 class="hero-sub-text"><?=get_field('hero_sub_text')?></h3>
+    </div>
 <?php else: ?>
   <section class="hero">
     <?php if ( have_rows('hero_slider') ): ?>

@@ -21,7 +21,7 @@
               <img class="logo-image" src="http://localhost/wp-content/uploads/2018/08/LOGO.png" alt="">
             </div>
           </a>
-
+        
         </div> <!-- Header Content & Logo -->
         <nav class="header-nav">
           <?php wp_nav_menu( array( 'menu' => 'Header Menu' ) ); ?>

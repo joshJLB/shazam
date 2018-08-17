@@ -2,7 +2,31 @@
 
 // Home Page Styling
 
+.hero
+    height: 70vh
+    background-size: cover
+    border-bottom: 10px solid $red
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    align-items: center
+    .hero-content
+        padding: 1.5rem
+        width: 100%
+        text-align: center
+        background: linear-gradient(to top, rgba(32,32,32,.9) 70%, transparent )
+        .hero-title
+            color: #fff 
+            font-family: $headings
+            font-weight: 700
+            text-transform: uppercase
+            letter-spacing: .25rem
+        .hero-sub-text
+            color: #fff 
+            font-family: $bodytext
+            font-size: 1rem
 .one
+    margin: .6rem
     height: 35rem
     text-transform: uppercase
     color: #fff
@@ -22,7 +46,6 @@
                 h3 
                     font-size: 1rem
         .service-row
-            // margin: 0 .6rem
             height: 50%
             display: flex
             align-items: stretch
