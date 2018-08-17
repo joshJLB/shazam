@@ -9,49 +9,57 @@ get_header(); ?>
   
   <?php get_template_part('components/home-page/hero'); ?>
   <!-- Or, nah -->
+  <?php 
+  
+    $rows = get_field('services_slider');
+
+  
+  ?>
 
   <div class="one">
+    <?php if(get_field('services_slider')): ?>
+    <?php while( have_rows('services_slider') ): the_row();?>
     <div class="slide">
       <div class="image-container m-auto">
         <div class="p-0 service-image-collage image-collage-one">
           <div class="service-row">
-              <div class="service-images service-image-one" style="background-image:url(http://localhost/wp-content/uploads/2018/08/88034363-car-detailing-car-washing-with-foam-shampoo.jpg)">
+              <div class="service-images service-image-one" style="background-image:url('<?=get_sub_field('service_image_one')?>')">
                 <div class="overlay">
-                <h3 class="service-title service-title-one">Service Title</h3>
+                <h3 class="service-title service-title-one"><?=get_sub_field('service_title_one');?></h3>
                 </div>
               </div>
-            <div class="service-images service-image-two" style="background-image:url(http://localhost/wp-content/uploads/2018/08/8138c5eb-2fee-49df-a12e-de0bf1c5091d_l.jpg)">
+            <div class="service-images service-image-two" style="background-image:url(<?=get_sub_field('service_image_two')?>)">
               <div class="overlay">
-              <h3 class="service-title service-title-two">Service Title</h3>
+              <h3 class="service-title service-title-two"><?=get_sub_field('service_title_two');?></h3>
               </div>
             </div>
           </div>
           <div class="service-row">
             <div class="service-arrow"><i class="fas fa-angle-left"></i></div>
-            <div class="service-images service-image-three" style="background-image:url(http://localhost/wp-content/uploads/2018/08/27ec5414-512c-471d-9f4e-71345a6ed879_l.jpg)">
+            <div class="service-images service-image-three" style="background-image:url(<?=get_sub_field('service_image_three')?>)">
               <div class="overlay">
-              <h3 class="service-title service-title-three" >Service Title</h3>
+              <h3 class="service-title service-title-three" ><?=get_sub_field('service_title_three');?></h3>
               </div>
             </div>
-            <div class="service-images service-image-four" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
+            <div class="service-images service-image-four" style="background-image:url(<?=get_sub_field('service_image_four')?>)">
               <div class="overlay">
-                <h3 class="service-title service-title-four">Service Title</h3>
+                <h3 class="service-title service-title-four"><?=get_sub_field('service_title_four');?></h3>
               </div>
             </div>
           </div>
         </div>
         <div class="p-0 service-image-collage image-collage-two">
-          <div class="service-images service-image-five" style="background-image:url(http://localhost/wp-content/uploads/2018/08/60dc909f-f36f-46ac-83e2-1578e6ad4162_h.jpg)">
+          <div class="service-images service-image-five" style="background-image:url(<?=get_sub_field('service_image_five')?>)">
             <div class="overlay">
-              <h3 class="service-title service-title-five">Service Title</h3>
+              <h3 class="service-title service-title-five"><?=get_sub_field('service_title_five');?></h3>
             </div>
           </div>
         </div>
         <div class="p-0 service-image-collage image-collage-three">
           <div class="service-row">
-            <div class="service-images service-image-six" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
+            <div class="service-images service-image-six" style="background-image:url(<?=get_sub_field('service_image_six')?>)">
               <div class="overlay">
-                <h3 class="service-title service-title-six">Service Title</h3>
+                <h3 class="service-title service-title-six"><?=get_sub_field('service_title_six');?></h3>
               </div>
             </div>
             <div class="service-see-all">
@@ -59,73 +67,18 @@ get_header(); ?>
             </div>
           </div>
           <div class="service-row">
-            <div class="service-images service-image-seven" style="background-image:url(http://localhost/wp-content/uploads/2018/08/88034363-car-detailing-car-washing-with-foam-shampoo-2.jpg)">
+            <div class="service-images service-image-seven" style="background-image:url(<?=get_sub_field('service_image_seven')?>)">
               <div class="overlay">
-                <h3 class="service-title service-title-seven">Service Title</h3>
+                <h3 class="service-title service-title-seven"><?=get_sub_field('service_title_seven');?></h3>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="slide">
-      <div class="image-container row m-auto">
-        <div class="p-0 service-image-collage image-collage-one">
-          <div class="service-row">
-              <div class="service-images service-image-one" style="background-image:url(http://localhost/wp-content/uploads/2018/08/60dc909f-f36f-46ac-83e2-1578e6ad4162_h.jpg)">
-                <div class="overlay">
-                <h3 class="service-title service-title-one">Service Title</h3>
-                </div>
-              </div>
-            <div class="service-images service-image-two" style="background-image:url(http://localhost/wp-content/uploads/2018/08/8138c5eb-2fee-49df-a12e-de0bf1c5091d_l-1.jpg)">
-              <div class="overlay">
-              <h3 class="service-title service-title-two">Service Title</h3>
-              </div>
-            </div>
-          </div>
-          <div class="service-row">
-            <div class="service-arrow" style="background-image:url(http://localhost/wp-content/uploads/2018/08/arrow.png)"><i class="fas fa-angle-left"></i></div>
-            <div class="service-images service-image-three" style="background-image:url(http://localhost/wp-content/uploads/2018/08/8138c5eb-2fee-49df-a12e-de0bf1c5091d_l.jpg)">
-              <div class="overlay">
-              <h3 class="service-title service-title-three" >Service Title</h3>
-              </div>
-            </div>
-            <div class="service-images service-image-four" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
-              <div class="overlay">
-                <h3 class="service-title service-title-four">Service Title</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-0 service-image-collage image-collage-two">
-          <div class="service-images service-image-five" style="background-image:url(http://localhost/wp-content/uploads/2018/08/85044609-hand-with-red-microfiber-sponge-waxing-interior-car.jpg)">
-            <div class="overlay">
-              <h3 class="service-title service-title-five">Service Title</h3>
-            </div>
-          </div>
-        </div>
-        <div class="p-0 service-image-collage image-collage-three">
-          <div class="service-row">
-            <div class="service-images service-image-six" style="background-image:url(http://localhost/wp-content/uploads/2018/08/75879256-close-up-of-a-young-man-polishing-his-car-square.jpg)">
-              <div class="overlay">
-                <h3 class="service-title service-title-six">Service Title</h3>
-              </div>
-            </div>
-            <div class="service-see-all">
-              <h3>See All</h3>
-            </div>
-          </div>
-          <div class="service-row">
-            <div class="service-images service-image-seven" style="background-image:url(http://localhost/wp-content/uploads/2018/08/88034363-car-detailing-car-washing-with-foam-shampoo-2.jpg)">
-              <div class="overlay">
-                <h3 class="service-title service-title-seven">Service Title</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <?php endwhile; ?>
+<?php endif; ?>
+  </div> 
 
   <section class="two">
     <div class="info-container">
@@ -139,8 +92,8 @@ get_header(); ?>
       </div>
       <div class="info-content">
         <div class="info-content-wrapper">
-          <h2>The Shazam Difference</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat aliquam erat sed mollis. Cras maximus semper nulla in congue. Suspendisse lacinia magna ac volutpat rhoncus. Nunc malesuada vehicula turpis, sit amet pretium leo laoreet a. Proin nec laoreet nisi, nec lobortis ante. Aliquam erat volutpat. Curabitur volutpat vitae orci id accumsan. Mauris ultrices, velit quis bibendum placerat, neque lectus viverra nibh, varius suscipit tellus purus a enim. Vivamus tempus turpis sit amet commodo mattis. Morbi id ante lectus.</p>
+          <h2><?=get_field('info_title')?></h2>
+          <p><?=get_field('info_content')?></p>
         </div>
       </div>
     </div>
@@ -150,7 +103,7 @@ get_header(); ?>
     <div class="example-container" style="background-image:url(http://localhost/wp-content/uploads/2018/08/pattern-background.jpg)">
       <div class="example-position-wrapper">
         <div class="example-one">
-          <div class="example-image covered" data-passive="http://localhost/wp-content/uploads/2018/08/honda-after-cropped.jpg" data-active="http://localhost/wp-content/uploads/2018/08/honda-before-cropped.jpg">              
+          <div class="example-image covered" data-passive="<?=get_field('after_one')?>" data-active="<?=get_field('before_one')?>">              
             <div class="handle"></div>
             <div class="changeable">
               <h2>Before</h2>
@@ -159,19 +112,19 @@ get_header(); ?>
           </div>
           <div class="example-content-wrapper">
             <div class="example-content">
-              <h2>Honda 2007</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat aliquam erat sed mollis. Cras maximus semper nulla in congue. Suspendisse lacinia magna ac volutpat rhoncus. Nunc malesuada vehicula turpis, sit amet pretium leo laoreet a. Proin nec laoreet nisi, nec lobortis ante. Aliquam erat volutpat. Curabitur volutpat vitae orci id accumsan. Mauris ultrices, velit quis bibendum placerat, neque lectus viverra nibh, varius suscipit tellus purus a enim.</p>
+              <h2><?=get_field('example_one_title')?></h2>
+              <p><?=get_field('example_one_content')?></p>
             </div>
           </div>
         </div>
         <div class="example-two">
           <div class="example-content-wrapper">
             <div class="example-content">
-              <h2>Audi 2010</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec placerat aliquam erat sed mollis. Cras maximus semper nulla in congue. Suspendisse lacinia magna ac volutpat rhoncus. Nunc malesuada vehicula turpis, sit amet pretium leo laoreet a. Proin nec laoreet nisi, nec lobortis ante. Aliquam erat volutpat. Curabitur volutpat vitae orci id accumsan. Mauris ultrices, velit quis bibendum placerat, neque lectus viverra nibh, varius suscipit tellus purus a enim.</p>
+              <h2><?=get_field('example_two_title')?></h2>
+              <p><?=get_field('example_two_content')?></p>
             </div>
           </div>
-          <div class="example-image covered second" data-passive="http://localhost/wp-content/uploads/2018/08/after-audi.jpg" data-active="http://localhost/wp-content/uploads/2018/08/detailing-before-audi.jpg">
+          <div class="example-image covered second" data-passive="<?=get_field('after_two')?>" data-active="<?=get_field('before_two')?>">
             <div class="handle"></div>
             <div class="changeable">
               <h2>Before</h2>
@@ -185,30 +138,29 @@ get_header(); ?>
 
   <section class="four">
     <div class="reviews">
-      <div class="reviews-image" style="background-image:url(http://localhost/wp-content/uploads/2018/08/100326475-soapy-water-drains-from-the-car-a-man-washes-a-hand-car-wash-with-water-under-pressure-in-a-car-wash.jpg)">
+      <div class="reviews-image" style="background-image:url(<?=get_field('reviews_image')?>)">
         <div class="reviews-image-overlay"></div>
         <div class="reviews-image-content">
-          <h2>Top Ranked Business On Better Business Bereau</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tempor quam sit amet ullamcorper elementum. Curabitur tempus vulputate molestie. Vestibulum vel risus non urna venenatis placerat.</p>
+          <h2><?=get_field('reviews_image_title')?></h2>
+          <p><?=get_field('reviews_image_content')?></p>
           <img src="http://localhost/wp-content/uploads/2018/08/bbb-logo.png" alt="">
         </div>
       </div>
       
       <div class="reviews-content">
-        <h2 class"reviews-header">Don't Believe Us? Read Our Reviews!</h2>
+        <h2 class"reviews-header"><?=get_field('reviews_quote_title')?></h2>
         <div class="reviews-content-section reviews-content-one">
           <img class="reviews-content-quote" src="http://localhost/wp-content/uploads/2018/08/“.png" alt="">
           <div class="reviews-content-one-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h3>Kenneth Allen</h3>
+            <p><?=get_field('reviews_quote_one')?></p>
+            <h3><?=get_field('reviews_quote_one_name')?></h3>
           </div>
         </div>
         <div class="reviews-content-section reviews-content-two">
-          <!-- <img class="reviews-content-two-image" src="http://localhost/wp-content/uploads/2018/08/quote-box.png" alt=""> -->
           <img class="reviews-content-quote" src="http://localhost/wp-content/uploads/2018/08/“.png" alt="">
           <div class="reviews-content-two-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <h3>Kenneth Allen</h3>
+            <p><?=get_field('reviews_quote_two')?></p>
+            <h3><?=get_field('reviews_quote_two_name')?></h3>
           </div>
         </div>
       </div>
