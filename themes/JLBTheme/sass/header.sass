@@ -2,6 +2,7 @@
 
 // Header Styling
 header
+  background-color: $blue
   position: fixed
   width: 100%
   top: 0
@@ -10,27 +11,49 @@ header
   z-index: 999
   .header
     +fb(center, space-between)
-    padding: 1rem 2rem
+    padding: 0
+    border-bottom: 8px solid $red
     .header-content
       width: 20%
       .logo-container
         height: 100%
         width: 100%
         .logo
-          +bg(contain, center)
+          +bg(contain, flex-start)
           height: 5rem
+          position: relative
+          .logo-white 
+            height: 11rem
+          .logo-image
+            height: 9rem
+            position: absolute
+            top: 1rem
+            left: 1rem
     .header-nav
-      width: 80%
+      // width: 70%
       .menu
-        +fb(center, flex-end)
+        +fb(center, center)
         padding: 0
         margin: 0
         list-style: none
         .menu-item
           margin: 0 0.25rem
           a
+            color: #fff 
+            font-family: $headings
+            font-size: 1.3rem
+            font-weight: 500
             display: inline-block
             padding: 0.5rem
+        .menu-item-61
+          display: none
+          padding-left: 1rem
+          padding-right: 1rem
+          background: #fff 
+          a 
+            color: black
+            font-weight: 700
+            text-transform: uppercase 
         .menu-item-has-children.rotate
           &:after
             transform: rotate(180deg) translateY(50%)
@@ -67,6 +90,15 @@ header
               white-space: nowrap
               a
                 padding: 0.25rem
+    .nav-button-container
+      margin-right: 5rem
+      padding: .75rem 2rem
+      background: #fff 
+      .nav-call-to-action  
+        color: black 
+        font-family: $headings
+        font-size: 1.3rem
+        font-weight: 700
 
 // Mobile Menu Button
 .mobile-button

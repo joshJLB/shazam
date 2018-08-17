@@ -15,15 +15,22 @@
     <header>
       <div class="header">
         <div class="header-content">
-          <a class="logo-container" href="<?php echo home_url(); ?>">
-            <div class="logo" style="background-image: url('#logo');"></div>
+          <a class="logo-container" style="background-image: url(http://localhost/wp-content/uploads/2018/08/navigation-square.png)" href="<?php echo home_url(); ?>">
+            <div class="logo" style="background-image: url(http://localhost/wp-content/uploads/2018/08/navigation-square.png)">
+              <img class="logo-white" src="http://localhost/wp-content/uploads/2018/08/navigation-square.png" alt="">
+              <img class="logo-image" src="http://localhost/wp-content/uploads/2018/08/LOGO.png" alt="">
+            </div>
           </a>
+
         </div> <!-- Header Content & Logo -->
         <nav class="header-nav">
           <?php wp_nav_menu( array( 'menu' => 'Header Menu' ) ); ?>
-          <button type="button" name="search"><a href="<?php echo home_url(); ?>"><i class="fas fa-search"></i></a></button>
+          <!-- <button type="button" name="search"><a href="<?php echo home_url(); ?>"><i class="fas fa-search"></i></a></button> -->
+          
         </nav> <!-- Header Navigation -->
-
+        <div class="nav-button-container">
+          <a class="nav-call-to-action">Call Now To Schedule</a>
+        </div>
         <!-- Button trigger modal -->
         <div class="mobile-button">
           <div class="button-container">
