@@ -24,13 +24,24 @@ header
           position: relative
           .logo-white 
             height: 11rem
+            @media screen and (max-width: 1440px)
+              height: 9rem
+            @media screen and (max-width: 1250px)
+              height: 5rem
           .logo-image
             height: 9rem
             position: absolute
             top: 1rem
             left: 1rem
+            @media screen and (max-width: 1440px)
+              height: 7rem
+            @media screen and (max-width: 1250px)
+              height: 4rem
+              top: .5rem
+              left: .5rem
     .header-nav
-      // width: 70%
+      @media screen and (max-width: 1024px)
+        display: none
       .menu
         +fb(center, center)
         padding: 0
@@ -94,6 +105,11 @@ header
       margin-right: 5rem
       padding: .75rem 2rem
       background: #fff 
+      @media screen and (max-width: 1440px)
+        margin-right: 1rem
+        padding: .75rem 1rem
+      @media screen and (max-width: 1024px)
+        display: none
       .nav-call-to-action  
         color: black 
         font-family: $headings
@@ -103,9 +119,11 @@ header
 // Mobile Menu Button
 .mobile-button
   display: none
+  margin-right: 2rem
   @media #{$large}
     +fb(center, center)
-
+  .bar1, .bar2, .bar3
+    background: #fff 
 // Mobile Menu Styling
 .mobile-menu
   position: fixed
