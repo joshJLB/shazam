@@ -2,7 +2,7 @@
 /*
 Widget Name: JLB Image Text
 Description: This is for the Image Text module displayed on the Child Page Mockup.
-Author:JLB (Jordan Lucas)
+Author:JLB (Josh Kincheloe)
 */
 class JLB_Image_Text extends SiteOrigin_Widget {
   function get_template_name($instance) {
