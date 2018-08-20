@@ -1,0 +1,27 @@
+@import 'variables'
+
+// Call To Action styles
+
+.call-to-action-container
+    padding: 4rem
+    margin: 3rem 0
+    background-size: cover
+    position: relative
+    display: flex
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: 1024px)
+        padding: 4rem 0
+    .call-to-action-content
+        z-index: 3
+        width: 75%
+        text-align: center
+        color: $gray
+        @media screen and (max-width: 1250px)
+            width: 85%
+        @media screen and (max-width: 1024px)
+            width: 95%
+        h2 
+            font-family: $headings
+        p 
+            font-family: $bodytext
