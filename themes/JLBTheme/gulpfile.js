@@ -18,7 +18,9 @@ var paths = {
   js: './js/*.js',
   sass: './sass/**/*.sass',
   compiled: './compiled',
-  css: './css/*.css'
+  css: './css/*.css',
+  widgetStyles: '../../plugins/extend-widgets-bundle/sass/*.sass',
+  widgetTemplates: '../../plugins/extend-widgets-bundle/extra-widgets/**/*-templates/*.php'
 };
 
 // default when you run gulp
@@ -26,7 +28,7 @@ gulp.task('default', ['sass', 'scripts', 'lint', 'compile-css', 'compile-js'], f
   console.log('Hey... Don\'t mess up!');
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.js, ['scripts', 'lint']);
-  gulp.watch('./**/*.php').on('change', browserSync.reload);
+  gulp.watch(['./**/*.php', paths.widgetStyles, paths.widgetTemplates]).on('change', browserSync.reload);
   browserSync.init({
     proxy: serverURL,
     open: false,
@@ -36,8 +38,7 @@ gulp.task('default', ['sass', 'scripts', 'lint', 'compile-css', 'compile-js'], f
 
 // dev task on server
 gulp.task('dev', ['scripts', 'lint', 'compile-js'], function() {
-  gulp.watch(paths.js, ['scripts', 'lint']);
-  gulp.watch('./**/*.php').on('change', browserSync.reload);
+  gulp.watch(paths.js, ['scripts', 'lint', 'compile-js']);
 });
 
 // sass task

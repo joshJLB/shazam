@@ -1,0 +1,49 @@
+@import 'variables'
+
+.image-text-container
+    margin: 0 auto
+    padding: 2rem 0
+    width: 80%
+    display: flex
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    @media screen and (max-width: 1250px)
+        width: 95%
+    @media screen and (max-width: 768px)
+        flex-wrap: wrap
+    .image-text-wrapper
+        padding: 0 3rem
+        width: 45%
+        @media screen and (max-width: 1440px)
+            padding: 0 2rem
+        @media screen and (max-width: 1250px)
+            padding: 0
+        @media screen and (max-width: 768px)
+            width: 100%
+        img 
+            width: 100%
+    .image-text-content
+        padding-left: 3rem
+        width: 55%
+        display: flex
+        flex-direction: column
+        @media screen and (max-width: 768px)
+            padding: 0
+            margin-top: 2rem
+            width: 100%
+        h2 
+            margin-bottom: 1rem
+            font-size: 2rem
+            font-family: $headings
+        p 
+            font-size: 1rem
+            font-family: $bodytext
+        a
+            padding: .25rem
+            margin-left: auto
+            color: #fff
+            font-size: .75rem
+            font-weight: bold
+            text-transform: uppercase 
+            background: $red
