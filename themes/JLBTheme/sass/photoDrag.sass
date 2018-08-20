@@ -1,81 +1,81 @@
 @import 'variables'
 
-#home 
-    .three
-        .covered, .second 
-            position: relative
-            width: 48%
-            height: 100%
-            overflow: hidden
-            @media screen and (max-width: 1024px)
-                width: 100%
-                height: 50vw
-                z-index: 2
-            .example-after
-                z-index: 1
-                position: absolute
-                right: 1.5rem
-                bottom: .1rem
-                margin-left: 1rem
-                color: #fff 
-                font-family: $headings
-                font-size: 5rem
-                font-weight: 700
-                font-style: italic
-                text-transform: uppercase
-                text-shadow: -.3rem .25rem $red
-                @media screen and (max-width: 768px)
-                    font-size: 3rem  
-            .changeable
-                position: relative
-                z-index: 2
-                display: flex
-                flex-wrap: wrap
-                align-items: flex-end
-                overflow: hidden
-                background-size: cover
-                h2 
-                    margin-left: 1rem
-                    color: #fff 
-                    font-family: $headings
-                    font-size: 5rem
-                    font-weight: 700
-                    font-style: italic
-                    text-transform: uppercase
-                    text-shadow: -.3rem .25rem $red
-                    z-index: 1
-                    @media screen and (max-width: 768px)
-                        font-size: 3rem 
-            .handle 
-                position: absolute
-                z-index: 3
-                width: 20px
-                height: 20px
-                margin-left: -8px
-                margin-top: -1px
-                border-radius: 50%
-                background-color: #fff
-                text-align: center
-                cursor: pointer
-            .handle span 
-                display: inline-block
-                margin: 15px 1px 0
-                color: #000
-                -webkit-transition: .1s ease-out
-                -moz-transition: .1s ease-out
-                -ms-transition: .1s ease-out
-                -o-transition: .1s ease-out
-                transition: .1s ease-out
-            .handle.vertical 
-                -webkit-transform: rotate(90deg)
-                -moz-transform: rotate(90deg)
-                -ms-transform: rotate(90deg)
-                -o-transform: rotate(90deg)
-                transform: rotate(90deg)
-            .handle:hover 
-                background-color: #555
-            .handle:hover span 
-                color: #FFF
+
+.covered, .second 
+    position: relative
+    width: 48%
+    height: 100%
+    background-size: cover
+    overflow: hidden
+    @media screen and (max-width: 1024px)
+        width: 100%
+        height: 50vw
+        z-index: 2
+    .example-after
+        z-index: 1
+        position: absolute
+        right: 1.5rem
+        bottom: .1rem
+        margin-left: 1rem
+        color: #fff 
+        font-family: $headings
+        font-size: 5rem
+        font-weight: 700
+        font-style: italic
+        text-transform: uppercase
+        text-shadow: -.3rem .25rem $red
+        @media screen and (max-width: 768px)
+            font-size: 3rem  
+    .changeable
+        position: relative
+        z-index: 2
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-end
+        overflow: hidden
+        background-size: cover
+        h2 
+            margin-left: 1rem
+            color: #fff 
+            font-family: $headings
+            font-size: 5rem
+            font-weight: 700
+            font-style: italic
+            text-transform: uppercase
+            text-shadow: -.3rem .25rem $red
+            z-index: 1
+            @media screen and (max-width: 768px)
+                font-size: 3rem 
+    .handle 
+        position: absolute
+        z-index: 3
+        width: 20px
+        height: 20px
+        margin-left: -8px
+        margin-top: -1px
+        border-radius: 50%
+        background-color: #fff
+        text-align: center
+        cursor: pointer
+    .handle span 
+        display: inline-block
+        margin: 15px 1px 0
+        color: #000
+        -webkit-transition: .1s ease-out
+        -moz-transition: .1s ease-out
+        -ms-transition: .1s ease-out
+        -o-transition: .1s ease-out
+        transition: .1s ease-out
+    .handle.vertical 
+        -webkit-transform: rotate(90deg)
+        -moz-transform: rotate(90deg)
+        -ms-transform: rotate(90deg)
+        -o-transform: rotate(90deg)
+        transform: rotate(90deg)
+    .handle:hover 
+        background-color: #555
+    .handle:hover span 
+        color: #FFF
 .handle-dragger 
 	background-color: #555
 	cursor: move

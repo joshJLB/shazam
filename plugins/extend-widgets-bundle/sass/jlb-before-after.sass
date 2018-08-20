@@ -1,0 +1,39 @@
+@import 'variables'
+
+// Before After Styles
+
+.before-after-container
+    margin: 2rem auto
+    width: 75%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+    @media screen and (max-width: 1440px)
+        width: 85%
+    @media screen and (max-width: 1024px)
+        width: 98%
+    .before-after-wrapper
+        margin: 1rem 0
+        width: 40%
+        display: flex
+        flex-direction: column
+        @media screen and (max-width: 1250px)
+            width: 45%
+        @media screen and (max-width: 900px)
+            width: 100%
+        .covered
+            width: 100%
+            height: 50vh
+            h2 
+                font-size: 3.5rem
+                @media screen and (max-width: 1250px)
+                    font-size: 3rem
+        .before-after-content
+            margin-top: 2rem
+            h2 
+                font-family: $headings
+            p 
+                font-family: $bodytext
+            
+

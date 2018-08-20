@@ -2,7 +2,7 @@
 $repeater = $instance['card_repeater'];
 ?>
 <div class="card-container">
-  <?php foreach($repeater as $index => $slide){
+  <?php foreach($repeater as $index => $slide){ 
     $cardTitle = $slide['title_text'];
     $cardText = $slide['card_text'];
     $linkText = $slide['link_text'];
