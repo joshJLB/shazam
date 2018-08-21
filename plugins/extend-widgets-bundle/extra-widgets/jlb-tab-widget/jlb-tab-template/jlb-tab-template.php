@@ -20,17 +20,18 @@
     $count2 = 0;
    foreach($tabs as $index => $tab) {
      $count2++;
+    $title = $tab['title'];
     $content = $tab['tab_content'];
-    $link_text = $tab['link_text'];
-    $link = $tab['link'];
+    $tabImage = wp_get_attachment_url($tab['tab_image']);
   ?>
   <div class="tab-pane <?php if($count2 == 1) { echo 'active'; }; ?>" id="tab-<?php echo $count2; ?>" role="tabpanel">
-    <div class="content-holder">
-      <?php echo $content; ?>
+    <div class="content-wrapper">  
+      <div class="content-holder">
+        <h3><?=$title?></h3>
+        <?php echo $content; ?>
+      </div>
+      <div class="tab-image" style="background-image:url(<?=$tabImage?>)"></div>
     </div>
-    <a href="<?php echo $link; ?>" class="link-bottom">
-      <p><?php echo $link_text; ?></p>
-    </a>
   </div>
 <?php }; ?>
 </div>

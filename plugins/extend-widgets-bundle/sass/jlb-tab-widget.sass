@@ -1,0 +1,102 @@
+@import 'variables'
+
+// Tabs
+.tab-container
+    margin: 3rem auto
+    width: 85%
+    @media screen and (max-width: 768px)
+        width: 95%
+    ul
+        padding-bottom: .3rem
+        border-bottom: 0
+        display: flex
+        flex-wrap: nowrap
+        justify-content: center
+        align-items: center
+        @media screen and (max-width: 768px)
+            display: flex
+            flex-wrap: wrap
+        li
+            width: 1%
+            flex-grow: 1
+            padding: .3rem
+            border-radius: 0
+            text-align: center
+            @media screen and (max-width: 768px)
+                width: 100%
+        a.nav-link
+            background-color: $blue
+            border-radius: 0
+            border: 0
+            position: relative
+            width: 100%
+            color: white
+            text-transform: uppercase
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            font-family: $headings
+            font-size: 1.2rem
+            .white-bottom
+                z-index: 9
+            .grey-bottom
+                z-index: 10
+                bottom: -.6rem
+                @media screen and (max-width: 768px)
+                    display: none
+            .arrow-div
+                opacity: 0
+        a.nav-link.active, a.hover
+            height: 5rem
+            background-color: $red 
+            color: white
+            border-radius: 0
+            border: 0
+            .arrow-div
+                opacity: 1
+
+    .tab-content
+        margin: -1rem .3rem .3rem .3rem
+        border: 2px solid $blue
+        @media screen and (max-width: 768px)
+            margin-top: 0
+        .tab-pane
+            .content-wrapper
+                padding: 2rem 2rem
+                display: flex
+                flex-wrap: nowrap
+                align-items: stretch 
+                @media screen and (max-width: 1024px)
+                    padding: 2rem 1rem
+                @media screen and (max-width: 786px)
+                    flex-wrap: wrap 
+                    justify-content: center
+                    align-items: center
+                .content-holder
+                    padding: 4rem 1rem 4rem 3rem
+                    width: 60%
+                    flex-grow: 1
+                    @media screen and (max-width: 1024px)
+                        padding-left: 0
+                    @media screen and (max-width: 786px)
+                        width: 100%
+                        padding: 0 0 2rem
+                    h3 
+                        font-family: $headings
+                        font-size: 2rem
+                        font-weight: 700
+                    p 
+                        font-family: $bodytext 
+                    p:last-child
+                        margin-bottom: 0
+                .tab-image
+                    background-size: cover 
+                    flex-grow: 3
+                    @media screen and (max-width: 768px)
+                        width: 75%
+                        height: 20rem
+                        flex-grow: 0
+                    @media screen and (max-width: 476px)
+                        width: 100%
+
