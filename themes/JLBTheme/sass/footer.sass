@@ -5,6 +5,7 @@
   background-color: $color1
   .footer-top
     padding: 2rem
+    background-size: cover 
     .footer-container
       display: flex
       flex-wrap: wrap
@@ -17,7 +18,7 @@
         justify-content: center
         @media screen and (max-width: 768px)
           margin-top: 2.5rem
-        h2, a
+        h2, .footer-number
           text-align: center
           color: #fff
           font-family: $headings
@@ -25,9 +26,13 @@
         h2 
           font-size: 1.5rem
           letter-spacing: .04rem
-        a 
+        .footer-number 
           font-weight: 700
-          font-size: 2.75rem  
+          font-size: 2.75rem 
+        .fa-facebook 
+          margin-top: 2rem
+          font-size: 2.5rem
+          color: #fff
       .footer-form
         margin-top: 1rem
         flex-grow: 8
@@ -79,8 +84,20 @@
         .gform_footer               // submit button
           transform: rotate(-90deg)
           position: absolute
-          left: 92.55%
-          top: 46%
+          right: -3rem
+          top: 46.2%
+          @media screen and (max-width: 1549px)
+            right: .5rem
+            top: 48%
+          @media screen and (max-width: 1440px)
+            right: 0
+          @media screen and (max-width: 1350px)
+            right: -1rem
+          @media screen and (max-width: 1200px)
+            right: -2rem
+          @media screen and (max-width: 900px)
+            right: -3rem
+            top: 47.5%
           input
             padding: 0
             width: 6.51rem

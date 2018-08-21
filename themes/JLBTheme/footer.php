@@ -6,7 +6,8 @@
             </div>
             <div class="footer-contact">
               <h2>Call Now To Schedule</h2>
-              <a href="tel:1234567890">123.456.7890</a>
+              <a href="tel:1234567890" class="footer-number">123.456.7890</a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
             </div>
             <div class="footer-form">
               <?php gravity_form(1); ?>
