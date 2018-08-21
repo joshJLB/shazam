@@ -34,6 +34,16 @@
         align-items: flex-end
         overflow: hidden
         background-size: cover
+        border-right: 2.5px solid #fff 
+        .changeable-line
+            z-index: 999
+            height: 100%
+            width: 5px
+            background-color: #fff 
+            position: absolute
+            top: 0
+            right: 0
+            transform: translateX(50%)
         h2 
             margin-left: 1rem
             color: #fff 
@@ -51,8 +61,7 @@
         z-index: 3
         width: 20px
         height: 20px
-        margin-left: -8px
-        margin-top: -1px
+        transform: translateX(-50%)
         border-radius: 50%
         background-color: #fff
         text-align: center
@@ -76,7 +85,7 @@
         background-color: #555
     .handle:hover span 
         color: #FFF
-.handle-dragger 
+.handle-dragger
 	background-color: #555
 	cursor: move
 .handle-dragger span 

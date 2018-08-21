@@ -14,6 +14,7 @@ $repeater = $instance['slider_repeater'];
         <div class="covered" data-passive="<?=$imageAfter?>" data-active="<?=$imageBefore?>">              
         <div class="handle"></div>
         <div class="changeable">
+            <div class="changeable-line"></div>
             <h2>Before</h2>
         </div>
         <h2 class="example-after">After</h2>

@@ -106,6 +106,7 @@ get_header(); ?>
           <div class="example-image covered" data-passive="<?=get_field('after_one')?>" data-active="<?=get_field('before_one')?>">              
             <div class="handle"></div>
             <div class="changeable">
+              <div class="changeable-line"></div>
               <h2>Before</h2>
             </div>
             <h2 class="example-after">After</h2>
@@ -127,6 +128,7 @@ get_header(); ?>
           <div class="example-image covered second" data-passive="<?=get_field('after_two')?>" data-active="<?=get_field('before_two')?>">
             <div class="handle"></div>
             <div class="changeable">
+              <div class="changeable-line"></div>
               <h2>Before</h2>
             </div>
             <h2 class="example-after">After</h2>
