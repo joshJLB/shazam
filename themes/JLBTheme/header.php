@@ -29,7 +29,7 @@
           
         </nav> <!-- Header Navigation -->
         <div class="nav-button-container">
-          <a class="nav-call-to-action">Call Now To Schedule</a>
+          <a href="tel:1234567890" class="nav-call-to-action">Call Now To Schedule</a>
         </div>
         <!-- Button trigger modal -->
         <div class="mobile-button">

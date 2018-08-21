@@ -24,53 +24,53 @@ get_header(); ?>
         <div class="p-0 service-image-collage image-collage-one">
           <div class="service-row">
               <div class="service-images service-image-one" style="background-image:url('<?=get_sub_field('service_image_one')?>')">
-                <div class="overlay">
-                <h3 class="service-title service-title-one"><?=get_sub_field('service_title_one');?></h3>
-                </div>
+                <a href="http://localhost/services" class="overlay">
+                  <h3 class="service-title service-title-one"><?=get_sub_field('service_title_one');?></h3>
+                </a>
               </div>
             <div class="service-images service-image-two" style="background-image:url(<?=get_sub_field('service_image_two')?>)">
-              <div class="overlay">
-              <h3 class="service-title service-title-two"><?=get_sub_field('service_title_two');?></h3>
-              </div>
+              <a href="http://localhost/services" class="overlay">
+                <h3 class="service-title service-title-two"><?=get_sub_field('service_title_two');?></h3>
+              </a>
             </div>
           </div>
           <div class="service-row">
             <div class="service-arrow"><i class="fas fa-angle-left"></i></div>
             <div class="service-images service-image-three" style="background-image:url(<?=get_sub_field('service_image_three')?>)">
-              <div class="overlay">
-              <h3 class="service-title service-title-three" ><?=get_sub_field('service_title_three');?></h3>
-              </div>
+              <a href="http://localhost/services" class="overlay">
+                <h3 class="service-title service-title-three" ><?=get_sub_field('service_title_three');?></h3>
+              </a>
             </div>
             <div class="service-images service-image-four" style="background-image:url(<?=get_sub_field('service_image_four')?>)">
-              <div class="overlay">
+              <a href="http://localhost/services" class="overlay">
                 <h3 class="service-title service-title-four"><?=get_sub_field('service_title_four');?></h3>
-              </div>
+              </a>
             </div>
           </div>
         </div>
         <div class="p-0 service-image-collage image-collage-two">
           <div class="service-images service-image-five" style="background-image:url(<?=get_sub_field('service_image_five')?>)">
-            <div class="overlay">
+            <a href="http://localhost/services" class="overlay">
               <h3 class="service-title service-title-five"><?=get_sub_field('service_title_five');?></h3>
-            </div>
+            </a>
           </div>
         </div>
         <div class="p-0 service-image-collage image-collage-three">
           <div class="service-row">
             <div class="service-images service-image-six" style="background-image:url(<?=get_sub_field('service_image_six')?>)">
-              <div class="overlay">
+              <a href="http://localhost/services" class="overlay">
                 <h3 class="service-title service-title-six"><?=get_sub_field('service_title_six');?></h3>
-              </div>
+              </a>
             </div>
-            <div class="service-see-all">
+            <a href="http://localhost/services" class="service-see-all">
               <h3>See All</h3>
-            </div>
+            </a>
           </div>
           <div class="service-row">
             <div class="service-images service-image-seven" style="background-image:url(<?=get_sub_field('service_image_seven')?>)">
-              <div class="overlay">
+              <a href="http://localhost/services" class="overlay">
                 <h3 class="service-title service-title-seven"><?=get_sub_field('service_title_seven');?></h3>
-              </div>
+              </a>
             </div>
           </div>
         </div>
