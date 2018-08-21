@@ -1,0 +1,65 @@
+@import 'variables'
+
+// Child Gallery Styles
+
+.child-gallery-container
+    margin: 3rem .6rem
+    height: 35rem
+    @media screen and (max-width: 1024px)
+        height: 20rem
+    @media screen and (max-width: 475px)
+        margin: 3rem .3rem
+    h2 
+        text-align: center
+        font-family: $headings
+        font-size: 2rem
+        font-weight: 700
+    .child-gallery-wrapper
+        height: 100%
+        width: 100%
+        display: flex
+        flex-wrap: nowrap
+        align-items: stretch
+        .gallery-images
+            margin: .6rem
+            background-size: cover
+            @media screen and (max-width: 475px)
+                margin: .3rem
+        .gallery-section-one
+            flex-grow: 1.7
+            .gallery-row
+                height: 50%
+                display: flex
+                align-items: stretch
+                .gallery-image-one
+                    flex-grow: 2
+                    @media screen and (max-width: 475px)
+                        flex-grow: 1
+                .gallery-image-two
+                    flex-grow: 1
+                .gallery-image-three
+                    flex-grow: 1
+                .gallery-image-four
+                    flex-grow: 2
+                    @media screen and (max-width: 475px)
+                        flex-grow: 1
+        .gallery-section-two
+            flex-grow: 1
+            display: flex
+            align-items: stretch
+            @media screen and (max-width: 768px)
+                display: none
+            .gallery-image-five
+                width: 100%
+        .gallery-section-three
+            flex-grow: 1
+            display: flex
+            flex-direction: column
+            align-items: stretch
+            @media screen and (max-width: 1250px)
+                display: none 
+            .gallery-image-six, .gallery-image-seven
+                height: 50%
+            
+
+    
