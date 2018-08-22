@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta charset="<?php bloginfo('charset'); ?>">
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo home_url(); ?>">
     <link rel="apple-touch-icon" href="<?php echo home_url(); ?>"/>

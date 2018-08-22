@@ -73,20 +73,23 @@ header
           position: relative
           +fb(center, center)
           &:after
+            color: #fff 
             content: '\f107'
             font-family: 'Font Awesome 5 Pro'
             +fb(center, center)
             cursor: pointer
             position: absolute
-            top: 50%
-            right: 0.25rem
+            top: 85%
+            right: 0.5rem
             transform: translateY(-50%)
             transition: 0.25s
           .sub-menu.scrollMenu
             // on scroll sub menu
           .sub-menu.active
+            background: $blue
             opacity: 1
             pointer-events: auto
+            transition: opacity .25s
           .sub-menu
             opacity: 0
             pointer-events: none
