@@ -20,9 +20,11 @@ get_header(); ?>
 
           <div class="blog-post-container">
             <div class="blog-post">
+              <h5><?php the_time('F j'); ?></h5>
               <h3><?php the_title(); ?></h3>
-              <h5><?php the_author(); ?></h5>
-              <?php the_excerpt(); ?>
+              <div class="blog-body">
+                <p><?php the_excerpt(); ?></p>
+              </div>
             </div>
           </div>
 

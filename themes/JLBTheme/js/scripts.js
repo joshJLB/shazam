@@ -89,6 +89,12 @@ $('body').addClass(detectBrowser());
 $('.gfield').addClass(detectBrowser());
 $('.gform_footer').addClass(detectBrowser());
 
+// blog
+
+$('.blog-body').text(function(index, currentContent) {
+  return currentContent.substr(0,175) + '...';
+});
+
 // photo dragger
 
 $(function() {
