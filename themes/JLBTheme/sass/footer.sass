@@ -55,6 +55,12 @@
             display: block 
           .gfield_required
             display: none
+          .gfield.is-trident
+            &:nth-of-type(2)
+              margin-top: -4rem
+          .gfield.is-edge, .gfield.is-firefox
+            &:nth-of-type(2)
+              margin-top: -4.3rem
           .gfield
             width: 45%
             display: inline-block
@@ -81,6 +87,24 @@
               @media screen and (max-width: 768px)
                 margin-left: 0
                 order: 3
+        .gform_footer.is-edge, .gform_footer.is-trident
+          @media screen and (max-width: 1550px)
+            top: 46.2%
+            right: -3.5rem
+          @media screen and (max-width: 1498px)
+            right: -1rem
+          @media screen and (max-width: 1495px)
+            top: 50%
+          @media screen and (max-width: 1250px)
+            right: -2rem
+        .gform_footer.is-firefox
+          @media screen and (max-width: 1566px)
+            top: 49%
+            right: 0
+          @media screen and (max-width: 1355px)
+            right: -1.5rem
+          @media screen and (max-width: 1120px)
+            right: -2.5rem
         .gform_footer               // submit button
           transform: rotate(-90deg)
           position: absolute

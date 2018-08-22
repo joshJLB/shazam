@@ -56,6 +56,12 @@ $('.menu-item-has-children > a').click(function(e) {
 function detectBrowser() {
   var ua = window.navigator.userAgent;
 
+  // detect edge
+  var edge = ua.indexOf('Edge/');
+  if (edge > 0) {
+     return 'is-edge';
+  }
+
   // detect chrome
   var chrome = ua.indexOf('Chrome/');
   if (chrome > 0) {
@@ -74,16 +80,14 @@ function detectBrowser() {
       return 'is-trident';
   }
 
-  // detect edge
-  var edge = ua.indexOf('Edge/');
-  if (edge > 0) {
-     return 'is-edge';
-  }
-
   // other browser
   return 'not-IE';
 }
 $('body').addClass(detectBrowser());
+
+// styles for ie and edge
+$('.gfield').addClass(detectBrowser());
+$('.gform_footer').addClass(detectBrowser());
 
 // photo dragger
 
