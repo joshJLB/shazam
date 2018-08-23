@@ -3,7 +3,7 @@ $repeater = $instance['gallery_repeater'];
 ?>
 
 <div class="child-gallery-container">
-
+ 
     <?php foreach($repeater as $index => $slide){ 
         $title = $slide['title'];
         $imageOne = wp_get_attachment_url($slide['gallery_image_one']);

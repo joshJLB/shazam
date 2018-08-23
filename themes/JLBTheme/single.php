@@ -14,7 +14,13 @@ get_header(); ?>
 
         <!-- Content Layout Here -->
         <div class="single-blog">
+          <!-- <?php if (has_post_thumbnail()) {
+            
+          } ?> -->
+          <img src="<?=the_post_thumbnail()[0];?>" alt="">
+          <h4><?php the_time('l, F j, Y'); ?></h4>
           <?php the_content(); ?>
+          <h5><?php the_author(); ?></h5>
         </div>
 
     <?php endwhile; wp_reset_postdata(); endif; ?>
