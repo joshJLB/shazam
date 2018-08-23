@@ -92,7 +92,7 @@ $('.gform_footer').addClass(detectBrowser());
 // blog
 
 $('.blog-body').text(function(index, currentContent) {
-  return currentContent.substr(0,175) + '...';
+  return currentContent.substr(0,300) + '...';
 });
 
 // photo dragger

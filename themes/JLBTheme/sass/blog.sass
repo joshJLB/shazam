@@ -5,16 +5,29 @@
 .blog-container
     margin: 3rem auto
     width: 90%
+    @media screen and (max-width: 1440px)
+        width: 95%
+    @media screen and (max-width: 1024px)
+        width: 100%
     .blog-posts
         padding: 2rem
         width: 100%
         display: flex
-        flex-wrap: nowrap
-        justify-content: space-around
-        background: green 
+        flex-wrap: wrap
+        justify-content: space-between 
+        @media screen and (max-width: 1024px)
+            padding: 0
         .blog-post-container
-            width: 24%
-            background: #fff 
+            margin: 2rem 1rem
+            width: 21%
+            background: #fff
+            box-shadow: 0px 0px 20px gray 
+            @media screen and (max-width: 1250px)
+                width: 28%
+            @media screen and (max-width: 768px)
+                width: 43%
+            @media screen and (max-width: 475px)
+                width: 100%   
             .blog-post
                 h5 
                     padding: .5rem
@@ -38,5 +51,20 @@
                     padding: .25rem 0
                     margin: 0 auto
                     width: 90%
+                .blog-link 
+                    margin: 1rem 0
+                    text-align: center
+                    a 
+                        font-family: $bodytext
+                        padding: .5rem
+                        border: 1px solid black 
+                    a:hover 
+                        background-color: $blue
+                        color: #fff 
+                        transition: .5s
 
-    
+// single blog
+
+.single-post-container
+    margin: 4rem auto
+    width: 75%

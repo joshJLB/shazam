@@ -13,7 +13,9 @@ get_header(); ?>
       <?php while ( have_posts() ): the_post(); ?>
 
         <!-- Content Layout Here -->
-        <?php the_content(); ?>
+        <div class="single-blog">
+          <?php the_content(); ?>
+        </div>
 
     <?php endwhile; wp_reset_postdata(); endif; ?>
   </div>

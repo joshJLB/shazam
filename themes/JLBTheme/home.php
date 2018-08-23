@@ -25,6 +25,9 @@ get_header(); ?>
               <div class="blog-body">
                 <p><?php the_excerpt(); ?></p>
               </div>
+              <div class="blog-link">
+                <a href="<?=the_permalink()?>">Read More</a>
+              </div>
             </div>
           </div>
 
