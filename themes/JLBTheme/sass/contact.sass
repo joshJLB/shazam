@@ -5,9 +5,13 @@
 .contact-container
     margin: 4rem auto
     width: 75%
+    @media #{$xlarge}
+        width: 100%
     .contact-title
             margin-bottom: 3rem
             text-align: center
+            @media #{$medium}
+                margin-bottom: 1rem
             h1 
                 color: $blue
     .contact-info
@@ -16,10 +20,16 @@
         flex-wrap: nowrap
         justify-content: center
         align-items: stretch
+        @media #{$medium}
+            flex-direction: column
         .contact-links
             margin-right: 5rem
             display: flex
             flex-direction: column
+            @media #{$medium}
+                margin: 0
+                flex-direction: row
+                justify-content: center
             a 
                 margin: .5rem
                 padding: 1rem 2rem
@@ -29,6 +39,8 @@
                 border-radius: 5px
                 .fa-phone, .fa-envelope, .fa-facebook-f
                     font-size: 3rem
+                    @media #{$xsmall}
+                        font-size: 2rem
             a:hover 
                 background-color: $blue
                 color: #fff 
@@ -38,6 +50,14 @@
             position: relative
             background-size: cover
             border-radius: 5px
+            @media #{$xlarge}
+                width: 50%
+            @media #{$large}
+                width: 60%
+            @media #{$medium}
+                margin: 1rem auto
+                width: 90%
+                height: 20rem
             .overlay2
                 border-radius: 5px
                 img 

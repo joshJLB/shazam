@@ -20,11 +20,10 @@ get_header(); ?>
         <a href="mailto:<?=get_field('email', 'option')?>"><i class="fas fa-envelope"></i></a>
         <a href="#"><i class="fab fa-facebook-f"></i></a>
       </div>
-      <div class="contact-image" style="background-image:url(http://localhost/wp-content/uploads/2018/08/nashville.jpg)">
+      <div class="contact-image" style="background-image:url(<?=get_field('background_image', 'option'); ?>)">
         <div class="overlay2">
-          <img src="http://localhost/wp-content/uploads/2018/08/LOGO-white.png" alt="">
-        </div>  
-        
+          <img src="<?=get_field('inner_image', 'option'); ?>" alt="">
+        </div> 
       </div>
     </div>
   </div>
