@@ -56,6 +56,9 @@ header
             font-weight: 500
             display: inline-block
             padding: 0.5rem
+          a:hover 
+            color: #ccc
+            transition: .5s  
         .menu-item-61
           display: none
           padding-left: 1rem
@@ -108,6 +111,7 @@ header
       margin-right: 5rem
       padding: .75rem 2rem
       background: #fff 
+      border-radius: 3px
       @media screen and (max-width: 1440px)
         margin-right: 1rem
         padding: .75rem 1rem
@@ -118,6 +122,12 @@ header
         font-family: $headings
         font-size: 1.3rem
         font-weight: 700
+    .nav-button-container:hover
+      background: transparent 
+      border: 1px solid #fff 
+      transition: .5s
+      a 
+        color: #fff    
 
 // Mobile Menu Button
 .mobile-button
@@ -158,7 +168,7 @@ header
       a
         font-size: 1.25rem
         font-weight: 300
-        color: $color1
+        color: $blue
         &:focus
           font-weight: 700
       .fas
@@ -169,13 +179,13 @@ header
         .menu-item
           padding: 0
           a
-            color: $color2
+            color: $blue
             font-size: 0.85rem
             &:focus
               font-weight: 700
     .menu-item-has-children
       a
-        color: transparentize($color1, 0.5)
+        color: transparentize($blue, 0.5)
 
 .mobile-menu.active
   transform: translateX(0)

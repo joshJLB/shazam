@@ -62,6 +62,7 @@
         .service-images:hover 
             .overlay 
                 opacity: 0
+                transition: .5s
         .image-collage-one
             flex-grow: 2.3
             .service-image-one
@@ -101,7 +102,7 @@
                     font-size: 10rem
                     color: $blue
                     @media screen and (max-width: 1024px)
-                        font-size: 5rem 
+                        font-size: 5rem
             .service-image-three
                 flex-grow: 4
                 position: relative
@@ -162,11 +163,10 @@
                     color: $blue
                     font-family: $headings
                     font-size: 2rem
-                    -webkit-transform: rotate(-90deg)
-                    -moz-transform: rotate(-90deg)
-                    -o-transform: rotate(-90deg)
-                    -ms-transform: rotate(-90deg)
                     transform: rotate(-90deg)
+            .service-see-all:hover
+                box-shadow: 0 0 10px #777
+                transition: .25s
             .service-image-seven
                 width: 100%
                 flex-grow: 1
