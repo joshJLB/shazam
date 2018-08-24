@@ -83,7 +83,7 @@ get_header(); ?>
   <section class="two">
     <div class="info-container">
       <div class="info-image">
-        <img src="http://localhost/wp-content/uploads/2018/08/about-photo.jpg" alt="">
+        <img src="<?=get_field('info_image'); ?>" alt="">
         <div class="over-30-years-wrapper">
           <h2 class="over-30-years-one">Over</h2>
           <h2 class="over-30-years-two">30</h2>
@@ -100,7 +100,7 @@ get_header(); ?>
   </section>
 
   <section class="three">
-    <div class="example-container" style="background-image:url(http://localhost/wp-content/uploads/2018/08/pattern-background.jpg)">
+    <div class="example-container" style="background-image:url(<?=home_url(); ?>/wp-content/uploads/2018/08/pattern-background.jpg)">
       <div class="example-position-wrapper">
         <div class="example-one">
           <div class="example-image covered" data-passive="<?=get_field('after_one')?>" data-active="<?=get_field('before_one')?>">              
@@ -137,29 +137,28 @@ get_header(); ?>
       </div>
     </div>
   </section>
-
   <section class="four">
     <div class="reviews">
-      <div class="reviews-image" style="background-image:url(<?=get_field('reviews_image')?>)">
+      <div class="reviews-image" style="background-image:url(<?=get_field('reviews_image_background')?>)">
         <div class="reviews-image-overlay"></div>
         <div class="reviews-image-content">
           <h2><?=get_field('reviews_image_title')?></h2>
           <p><?=get_field('reviews_image_content')?></p>
-          <img src="http://localhost/wp-content/uploads/2018/08/bbb-logo.png" alt="">
+          <img src="<?=get_field('reviews_image_inner'); ?>" alt="">
         </div>
       </div>
       
       <div class="reviews-content">
         <h2 class"reviews-header"><?=get_field('reviews_quote_title')?></h2>
         <div class="reviews-content-section reviews-content-one">
-          <img class="reviews-content-quote" src="http://localhost/wp-content/uploads/2018/08/“.png" alt="">
+          <img class="reviews-content-quote" src="<?=home_url(); ?>/wp-content/uploads/2018/08/“.png" alt="">
           <div class="reviews-content-one-content">
             <p><?=get_field('reviews_quote_one')?></p>
             <h3><?=get_field('reviews_quote_one_name')?></h3>
           </div>
         </div>
         <div class="reviews-content-section reviews-content-two">
-          <img class="reviews-content-quote" src="http://localhost/wp-content/uploads/2018/08/“.png" alt="">
+          <img class="reviews-content-quote" src="<?=home_url(); ?>/wp-content/uploads/2018/08/“.png" alt="">
           <div class="reviews-content-two-content">
             <p><?=get_field('reviews_quote_two')?></p>
             <h3><?=get_field('reviews_quote_two_name')?></h3>

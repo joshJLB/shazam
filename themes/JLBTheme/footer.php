@@ -1,8 +1,8 @@
       <footer class="footer">
-        <section class="footer-top" style="background-image:url(http://localhost/wp-content/uploads/2018/08/footer-photo.jpg)">
+        <section class="footer-top" style="background-image:url(<?=home_url(); ?>/wp-content/uploads/2018/08/footer-photo.jpg)">
           <div class="footer-container">
             <div class="footer-logo">
-              <img src="http://localhost/wp-content/uploads/2018/08/LOGO-white.png" alt="">  
+              <img src="<?=home_url(); ?>/wp-content/uploads/2018/08/LOGO-white.png" alt="">  
             </div>
             <div class="footer-contact">
               <h2>Call Now To Schedule</h2>

@@ -167,6 +167,31 @@
             "endpoint": 0
         },
         {
+            "key": "field_5b802e7a6b173",
+            "label": "Info Image",
+            "name": "info_image",
+            "type": "image",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
             "key": "field_5b771449ef3ec",
             "label": "Info Title",
             "name": "info_title",
@@ -420,8 +445,8 @@
         },
         {
             "key": "field_5b772a7b04e3c",
-            "label": "Reviews Image",
-            "name": "reviews_image",
+            "label": "Reviews Image Background",
+            "name": "reviews_image_background",
             "type": "image",
             "value": null,
             "instructions": "",
@@ -482,6 +507,31 @@
             "maxlength": "",
             "rows": "",
             "new_lines": ""
+        },
+        {
+            "key": "field_5b802f42eed99",
+            "label": "Reviews Image Inner",
+            "name": "reviews_image_inner",
+            "type": "image",
+            "value": null,
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "url",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         },
         {
             "key": "field_5b772b1804e3f",
@@ -601,5 +651,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1534537711
+    "modified": 1535127393
 }
