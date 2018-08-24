@@ -73,6 +73,7 @@ header
             transform: rotate(180deg) translateY(50%)
             transform-origin: center
         .menu-item-has-children
+          padding-right: 1rem
           position: relative
           +fb(center, center)
           &:after
@@ -82,17 +83,25 @@ header
             +fb(center, center)
             cursor: pointer
             position: absolute
-            top: 85%
+            top: 60%
             right: 0.5rem
             transform: translateY(-50%)
             transition: 0.25s
           .sub-menu.scrollMenu
             // on scroll sub menu
           .sub-menu.active
+            padding: 1rem
             background: $blue
             opacity: 1
             pointer-events: auto
             transition: opacity .25s
+          .sub-menu.active:hover
+            background: #fff 
+            transition: .5s
+            a 
+              color: $blue
+            a:hover 
+              border-bottom: 1px solid $blue
           .sub-menu
             opacity: 0
             pointer-events: none

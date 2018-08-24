@@ -38,16 +38,7 @@
             align-items: center
             font-family: $headings
             font-size: 1.2rem
-            .white-bottom
-                z-index: 9
-            .grey-bottom
-                z-index: 10
-                bottom: -.6rem
-                @media screen and (max-width: 768px)
-                    display: none
-            .arrow-div
-                opacity: 0
-        a.nav-link.active, a.hover
+        a.nav-link.active 
             height: 5rem
             background-color: $red 
             color: white
@@ -55,7 +46,8 @@
             border: 0
             .arrow-div
                 opacity: 1
-
+        a.nav-link:hover 
+            background-color: $red
     .tab-content
         margin: -1rem .3rem .3rem .3rem
         border: 2px solid $blue
