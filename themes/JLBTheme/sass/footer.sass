@@ -75,22 +75,32 @@
                 order: 2
           .ginput_container
             input                   // input li's
-              padding: .5rem 0
+              padding: .5rem 0 .5rem .5rem
               width: 100%
             textarea               // message area li
               width: 100%
               height: 6.5rem
               margin-left: 3.5rem
               order: 2
+              font-size: 100%
               @media screen and (max-width: 1024px) 
                 margin-left: 2.5rem
               @media screen and (max-width: 768px)
                 margin-left: 0
                 order: 3
+            textarea.small 
+              padding: .5rem 0 .5rem .5rem
+              font-size: 100%
         .gform_footer.is-edge, .gform_footer.is-trident
-          @media screen and (max-width: 1550px)
-            top: 46.2%
+          @media screen and (max-width: 1668px)
+            top: 46%
             right: -3.5rem
+          @media screen and (max-width: 1587px)
+            right: 0
+            top: 50%
+          // @media screen and (max-width: 1550px)
+          //   top: 46.2%
+          //   right: -3.5rem
           @media screen and (max-width: 1498px)
             right: -1rem
           @media screen and (max-width: 1495px)
@@ -98,8 +108,11 @@
           @media screen and (max-width: 1250px)
             right: -2rem
         .gform_footer.is-firefox
-          @media screen and (max-width: 1566px)
-            top: 49%
+          @media screen and (max-width: 1668px)
+            top: 46.2%
+            right: -3.5rem 
+          @media screen and (max-width: 1594px)
+            top: 49.5%
             right: 0
           @media screen and (max-width: 1355px)
             right: -1.5rem
@@ -110,6 +123,9 @@
           position: absolute
           right: -3rem
           top: 46.2%
+          @media screen and (max-width: 1668px)
+            right: 1rem
+            top: 47.2%
           @media screen and (max-width: 1549px)
             right: .5rem
             top: 47.5%
